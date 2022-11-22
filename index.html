@@ -19,7 +19,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>    
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>     -->
 
     <link rel="stylesheet" href="./assets/css/output.css">
     <style>
@@ -31,7 +31,7 @@
       .swiper-slide {
         text-align: center;
         font-size: 18px;
-        height: 100%;
+        /* height: 100%; */
         background: transparent;
 
         /* Center slide text vertically */
@@ -55,9 +55,35 @@
         height: 100%;
         object-fit: cover;
       }
-      /* * {
-  outline: 1px solid #f00 !important;
-} */
+
+      .hero-1 {
+        background-image: url('./assets/images/mobile-hero.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-right: 20px;
+        /* height: 200px; */
+      }
+
+      .hero-2 {
+        background-image: url("./assets/images/hero-bg1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* height: 200px; */
+      }
+
+      .hero-pc1 {
+        background-image: url('./assets/images/hero-bg2.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: bottom;
+
+      }
+      .hero-pc2 {
+        background-image: url('./assets/images/hero-bg1.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position-y: bottom;
+      }
     </style>
     <title>Title Here</title>
 </head>
@@ -106,32 +132,40 @@
     <!-- Section starts -->
     <section class="pt-8 px-6 ">
         <div class="container mx-auto">
-            <div class="md:flex items-center">
+            <div class="md:flex items-center lg:mx-8">
               <div class="flex flex-col items-start space-y-5 md:space-y-4 lg:space-y-6">
                   <h1 class="text-4xl text-whiteAccent font-extrabold md:text-5xl lg:text-[74px]">Headline hoilder is here</h1>
                   <p class="text-base text-whiteSecond md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.contetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscin</p>
                   <button class="mt-4 text-prupleAccent bg-white px-8 py-3 font-semibold rounded-lg"><a href="#">Learn More</a></button>
-                      <!-- Slider goes here -->
                       <!-- Swiper for mobile -->
                   <div class="swiper mySwiper md:hidden block">
                     <div class="swiper-wrapper">
-                      <div class="swiper-slide hero-1"><img src="./assets/images/hero-homepage.png" alt=""></div>
-                      <div class="swiper-slide hero-2" style="height: 100% !important;"><img style="width: 80% !important; margin-top: 10px;" class="object-contain" src="./assets/images/graphics/Group 1000000825.png" alt=""></div>
+                      <div class="swiper-slide hero-1">
+                        <img src="./assets/images/hero-homepage.png" alt="">
+                      </div>
+                      <div class="swiper-slide hero-2" style="height: 100% !important;">
+                        <img style="width: 80% !important; margin-top: 10px;" class="object-contain" src="./assets/images/graphics/Group 1000000825.png" alt="">
+                      </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <!-- <div class="swiper-pagination"></div> -->
                   </div>
               </div>
-              <!-- Swiper for large screens -->
-              <div class="swiper mySwiper hidden md:block">
+              <!-- Swiper -->
+              <div class="swiper mySwiper-2 hidden md:block relative" style="height: 600px !important;">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="./assets/images/hero-pc.png" alt=""></div>
-                  <div class="swiper-slide"><img src="./assets/images/hero-pc.png" alt=""></div>
+                  <div class="swiper-slide w-[600px] hero-pc1">
+                    <img src="./assets/images/hero-pc.png" alt="" style="object-fit: contain !important; width: 70%;">
+                  </div>
+                  <div class="swiper-slide w-[600px] hero-pc2 ">
+                    <img src="./assets/images/pc-hero2.png" alt="" style="object-fit: contain !important; width: 52%; margin-top: -20px !important;">
+                  </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
               </div>
             </div>
-        </div>
+            <div class="swiper-button-next text-white top-[50%] hidden md:block"></div>
+            <div class="swiper-button-prev text-white top-[50%] hidden md:block"></div>
+          </div>
         <img src="./assets/images/string.png" class="absolute w-[100vw] top-0 -z-50" alt="">
     </section>  
     <!-- section ends -->
@@ -293,8 +327,8 @@
     <!-- Section starts -->
 
     <section class="px-5 md:bg-white rounded-md md:mx-16" id="contact">
-      <div class="container mx-auto">
-        <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-14 my-16 md:my-24 text-white md:text-prupleAccent md:pt-8">Contact US!!</h1>
+      <div class="container mx-auto lg:px-20 lg:pb-8">
+        <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-14 my-16 md:my-24 text-white md:text-prupleAccent md:pt-8 ">Contact US!!</h1>
         <div class="flex flex-col lg:flex-row items-center lg:items-start lg:gap-x-16">
           <form class="w-full">
             <div class="flex flex-wrap -mx-3 mb-6">
@@ -399,20 +433,28 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Initialize Swiper -->
     <script>
-      var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-        },
-      });
-    </script>
-
-    <script>
-      var swiper = new Swiper(".mySwiper", {
+      var swiper = new Swiper(".mySwiper-2", {
+        height: 200,
+        loop: true,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        height: 200,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
         },
       });
     </script>

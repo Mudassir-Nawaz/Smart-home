@@ -26,9 +26,6 @@ window.addEventListener('scroll', (event) => {
 
 });
 
-
-
-
 menubarIcon.addEventListener('click', ()=> {
     menubarIcon.classList.toggle('fa-bars');
     menubarIcon.classList.toggle('fa-xmark');

@@ -10,7 +10,7 @@
 }
 
 
-
+/* 
 .swiper {
     width: 100%;
     height: 100%;
@@ -22,7 +22,6 @@
     height:100%;
     background: transparent;
 
-    /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -44,19 +43,7 @@
     object-fit: cover;
   }
 
-  .hero-1 {
-    background-image: url('../images/Rectangle\ 4352.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-right: 20px;
-  }
-
-  .hero-2 {
-    background-image: url("../images/hero-bg1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
 
   .swiper-pagination {
     margin: 100px 0 0 0;
-  }
+  } */
