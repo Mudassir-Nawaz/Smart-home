@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    body {
+        background: linear-gradient(168.19deg, #483EB3 0%, rgba(72, 62, 179, 0.69) 99.04%);
+        min-height: 900px;
+    }
+}
