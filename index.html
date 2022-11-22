@@ -21,63 +21,47 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>    
 
-<!-- Demo styles -->
-<style>
-
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    height:100%;
-    background: transparent;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-  .hero-1 {
-    background-image: url("assets/images/Rectangle\ 4352.png");
-    margin-right: 20px;
-  }
-
-  .hero-2 {
-    background-image: url("assets/images/hero-bg1.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .swiper-pagination {
-    margin: 100px 0 0 0;
-  }
-
-</style>
-
     <link rel="stylesheet" href="./assets/css/output.css">
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        height: 100%;
+        background: transparent;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      /* * {
+  outline: 1px solid #f00 !important;
+} */
+    </style>
     <title>Title Here</title>
 </head>
-<body class="font-Inter ">
+<body class="font-Inter scroll-smooth overflow-x-clip " >
 
     <!-- NavBar -->
     <nav class="px-4 py-8 container mx-auto relative">
@@ -87,23 +71,30 @@
                     <!-- LOGO HERE -->
                     <h1 class="font-semibold text-xl">Logohere</h1>
                 </div>
+                <!-- MENUBAR (mobile) -->
                 <div id="navBtnOpen" class="block md:hidden bg-transparent">
-                    <i class="fa-light fas fa-bars text-xl"></i>
+                    <i id="menubar-icon" class="fa-light fas fa-bars text-xl"></i>
                 </div>
+
                 <!-- Menu -->
                 <div class="hidden md:block">
-                    
+                  <div class="z-50">
+                    <div class="flex bg-transparent text-white text-center gap-x-6">
+                        <a href="#" class="text-xl block focus:font-semibold rounded py-2">Home</a>
+                        <a href="#service" class="text-xl block focus:font-semibold rounded py-2">Service</a>
+                        <a href="#testimonials" class="text-xl block focus:font-semibold rounded py-2">Testimonials</a>
+                        <a href="#contact" class="text-xl block focus:font-semibold rounded py-2">Contact</a>
+                    </div>
+                </div>    
                 </div>
                 <!-- Mobile Menu -->
                 <div class="absolute left-0 top-0 hidden z-50" id="mobileMenu">
-                    <div class="flex bg-white text w-[195px] h-[100vh] pt-14 text-[#493FB2] text-center px">
+                    <div class="flex bg-white text w-[195px] h-[120vh] pt-14 text-[#493FB2] text-center px">
                         <ul class="w-full">
-                            <a href="#" class="text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Home</a>
-                            <a href="#features" class="text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Features</a>
-                            <a href="#testimoials" class="text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Testimonials</a>
-                            <a href="#pricing" class="text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Pricing</a>
-                            <a href="#faq" class="text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">FAQ</a>
-                            <a href="#service" class="text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Service</a>
+                            <a href="#" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Home</a>
+                            <a href="#service" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Service</a>
+                            <a href="#testimonials" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Testimonials</a>
+                            <a href="#contact" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Contact</a>
                         </ul>
                     </div>
                 </div>
@@ -115,73 +106,145 @@
     <!-- Section starts -->
     <section class="pt-8 px-6 ">
         <div class="container mx-auto">
-            <div class="flex flex-col items-start gap-y-4">
-                <h1 class="text-4xl text-whiteAccent font-extrabold">Headline hoilder is here</h1>
-                <p class="text-base text-whiteSecond">Lorem ipsum dolor sit amet, consectetur adipiscing elit.contetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscin</p>
-                <button class="mt-4 text-prupleAccent bg-white px-8 py-3 font-semibold rounded-lg"><a href="#">Learn More</a></button>
-                    <!-- Slider goes here -->
-                            <!-- Swiper -->
-                <div class="swiper mySwiper">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide hero-1"><img src="./assets/images/hero-homepage.png" alt=""></div>
-                    <div class="swiper-slide hero-2" style="height: 100% !important;"><img style="width: 80% !important; margin-top: 10px;" class="object-contain" src="./assets/images/graphics/Group 1000000825.png" alt=""></div>
+            <div class="md:flex items-center">
+              <div class="flex flex-col items-start space-y-5 md:space-y-4 lg:space-y-6">
+                  <h1 class="text-4xl text-whiteAccent font-extrabold md:text-5xl lg:text-[74px]">Headline hoilder is here</h1>
+                  <p class="text-base text-whiteSecond md:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit.contetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscin</p>
+                  <button class="mt-4 text-prupleAccent bg-white px-8 py-3 font-semibold rounded-lg"><a href="#">Learn More</a></button>
+                      <!-- Slider goes here -->
+                      <!-- Swiper for mobile -->
+                  <div class="swiper mySwiper md:hidden block">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide hero-1"><img src="./assets/images/hero-homepage.png" alt=""></div>
+                      <div class="swiper-slide hero-2" style="height: 100% !important;"><img style="width: 80% !important; margin-top: 10px;" class="object-contain" src="./assets/images/graphics/Group 1000000825.png" alt=""></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                   </div>
-                  <div class="swiper-pagination"></div>
-                </div>                
+              </div>
+              <!-- Swiper for large screens -->
+              <div class="swiper mySwiper hidden md:block">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/images/hero-pc.png" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/images/hero-pc.png" alt=""></div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+              </div>
             </div>
         </div>
+        <img src="./assets/images/string.png" class="absolute w-[100vw] top-0 -z-50" alt="">
     </section>  
     <!-- section ends -->
     
     <!-- section starts -->
-    <section class="body-font">
-        <div class="container px-5 py-24 mx-auto">
+    <section class=" relative" id="service">
+        <div class="container my-24 mx-auto">
           <h1 class="text-center text-3xl md:text-4xl lg:text-5xl my-4 md:my-8 text-white">Our Service</h1>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 lg:w-1/3">
-              <div class="space-y-4 group h-full bg-white mx-6 px-8 py-12 rounded-lg overflow-hidden relative hover:bg-primaryPurple hover:text-white transition-all duration-500">
+          <div class="flex flex-col lg:flex-row overflow-x-clip">
+            <div class="w-full p-4 lg:w-1/3">
+              <div class="space-y-4 lg:space-y-0 group h-full bg-white  px-8 py-12 rounded-lg overflow-hidden relative hover:bg-primaryPurple hover:text-white transition-all duration-500">
                 <div class="transition-all duration-500 p-4 bg-primaryPurple rounded-full inline-block group-hover:bg-white group">
                     <svg class="" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.57 13.0267L20 11.5967L18.57 10.1667L15 13.7367L6.43 5.16675L10 1.59675L8.57 0.166748L7.14 1.59675L5.71 0.166748L3.57 2.30675L2.14 0.876748L0.71 2.30675L2.14 3.73675L0 5.87675L1.43 7.30675L0 8.73675L1.43 10.1667L5 6.59675L13.57 15.1667L10 18.7367L11.43 20.1667L12.86 18.7367L14.29 20.1667L16.43 18.0267L17.86 19.4567L19.29 18.0267L17.86 16.5967L20 14.4567L18.57 13.0267Z" fill="white" class="group-hover:fill-primaryPurple"/>
                     </svg>
                 </div>
-                <h1 class="title-font sm:text-2xl text-xl font-medium">Share Your Hobby</h1>
-                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo nulla, impedit, quod alias quibusdam sunt exercitationem distinctio ducimus iure quam repellendus recusandae maxime assumenda dicta doloremque, molestiae sapiente architecto.</p>
+                <h1 class="sm:text-2xl text-xl font-medium">Share Your Hobby</h1>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo nulla, impedit, quod alias quibusdam sunt exercitationem distinctio ducimus iure quam repellendus recusandae maxime assumenda dicta doloremque, molestiae sapiente architecto.</p>
               </div>
             </div>
-            <div class="p-4 lg:w-1/3">
-              <div class="space-y-4 group h-full bg-white mx-6 px-8 py-12 rounded-lg overflow-hidden relative hover:bg-primaryPurple hover:text-white transition-all duration-500">
+            <div class="w-full p-4 lg:w-1/3">
+              <div class="space-y-4 lg:space-y-0 group h-full bg-white  px-8 py-12 rounded-lg overflow-hidden relative hover:bg-primaryPurple hover:text-white transition-all duration-500">
                 <div class="transition-all duration-500 p-4 bg-primaryPurple rounded-full inline-block group-hover:bg-white group">
                     <svg class="" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.57 13.0267L20 11.5967L18.57 10.1667L15 13.7367L6.43 5.16675L10 1.59675L8.57 0.166748L7.14 1.59675L5.71 0.166748L3.57 2.30675L2.14 0.876748L0.71 2.30675L2.14 3.73675L0 5.87675L1.43 7.30675L0 8.73675L1.43 10.1667L5 6.59675L13.57 15.1667L10 18.7367L11.43 20.1667L12.86 18.7367L14.29 20.1667L16.43 18.0267L17.86 19.4567L19.29 18.0267L17.86 16.5967L20 14.4567L18.57 13.0267Z" fill="white" class="group-hover:fill-primaryPurple"/>
                     </svg>
                 </div>
-                <h1 class="title-font sm:text-2xl text-xl font-medium">Share Your Hobby</h1>
-                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo nulla, impedit, quod alias quibusdam sunt exercitationem distinctio ducimus iure quam repellendus recusandae maxime assumenda dicta doloremque, molestiae sapiente architecto.</p>
+                <h1 class="sm:text-2xl text-xl font-medium">Share Your Hobby</h1>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo nulla, impedit, quod alias quibusdam sunt exercitationem distinctio ducimus iure quam repellendus recusandae maxime assumenda dicta doloremque, molestiae sapiente architecto.</p>
               </div>
             </div>
-            <div class="p-4 lg:w-1/3">
-              <div class="space-y-4 group h-full bg-white mx-6 px-8 py-12 rounded-lg overflow-hidden relative hover:bg-primaryPurple hover:text-white transition-all duration-500">
+            <div class="w-full p-4 lg:w-1/3">
+              <div class="space-y-4 lg:space-y-0 group h-full bg-white  px-8 py-12 rounded-lg overflow-hidden relative hover:bg-primaryPurple hover:text-white transition-all duration-500">
                 <div class="transition-all duration-500 p-4 bg-primaryPurple rounded-full inline-block group-hover:bg-white group">
                     <svg class="" width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M18.57 13.0267L20 11.5967L18.57 10.1667L15 13.7367L6.43 5.16675L10 1.59675L8.57 0.166748L7.14 1.59675L5.71 0.166748L3.57 2.30675L2.14 0.876748L0.71 2.30675L2.14 3.73675L0 5.87675L1.43 7.30675L0 8.73675L1.43 10.1667L5 6.59675L13.57 15.1667L10 18.7367L11.43 20.1667L12.86 18.7367L14.29 20.1667L16.43 18.0267L17.86 19.4567L19.29 18.0267L17.86 16.5967L20 14.4567L18.57 13.0267Z" fill="white" class="group-hover:fill-primaryPurple"/>
                     </svg>
                 </div>
-                <h1 class="title-font sm:text-2xl text-xl font-medium">Share Your Hobby</h1>
-                <p class="leading-relaxed">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo nulla, impedit, quod alias quibusdam sunt exercitationem distinctio ducimus iure quam repellendus recusandae maxime assumenda dicta doloremque, molestiae sapiente architecto.</p>
+                <h1 class="sm:text-2xl text-xl font-medium">Share Your Hobby</h1>
+                <p class="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid quo nulla, impedit, quod alias quibusdam sunt exercitationem distinctio ducimus iure quam repellendus recusandae maxime assumenda dicta doloremque, molestiae sapiente architecto.</p>
               </div>
             </div>
           </div>
         </div>
+        <img src="./assets/images/Ellipse.png" class="absolute left-0 top-32 -z-50" alt="">
     </section>
     <!--section ends -->
 
     <!-- Testimonials section -->
-
-    <section class="mb-12">
+    <div>  
+      <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-16 md:my-24 text-white hidden md:block">What Clients Say About US!!</h1>
+    </div>
+    <section class="mb-12 md:bg-white" id="testimonials">
         <div class="container mx-auto">
-          <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-16 md:my-24 text-white">What Clients Say About US!!</h1>
-          <div>
+          <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-16 md:my-24 text-white block md:hidden">What Clients Say About US!!</h1>
+
+          <!-- new carousel -->
+
+          <div class="swiper mySwiper hidden md:block py-16">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="flex mx-4 h-80 shadow-lg">
+                  <div class="w-[20%] h-80 ">
+                    <img src="./assets/images/testimonial.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
+                  </div>
+                  <div class="bg-[#e0e0e0] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80  rounded-tr-lg rounded-br-lg">
+                    <svg class="mb-2 inline py-10"  viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.09705 9.17704C9.54567 9.17704 10.9617 9.6066 12.1662 10.4114C13.3707 11.2162 14.3095 12.3601 14.8638 13.6985C15.4182 15.0368 15.5632 16.5095 15.2806 17.9303C14.998 19.351 14.3004 20.6561 13.2761 21.6804C12.2518 22.7047 10.9467 23.4023 9.52596 23.6849C8.10518 23.9675 6.6325 23.8225 5.29416 23.2681C3.95582 22.7138 2.81192 21.775 2.00711 20.5705C1.2023 19.366 0.77274 17.95 0.77274 16.5014L0.739258 15.455C0.739258 11.57 2.28259 7.84403 5.02974 5.09688C7.77689 2.34973 11.5028 0.806396 15.3879 0.806396V4.99172C14.0132 4.98802 12.6515 5.25688 11.3813 5.78274C10.1112 6.3086 8.95797 7.08103 7.98824 8.05537C7.61134 8.43156 7.26365 8.83592 6.94818 9.26493C7.32277 9.20634 7.70573 9.17495 8.09496 9.17495L8.09705 9.17704ZM26.931 9.17704C28.3796 9.17704 29.7957 9.6066 31.0002 10.4114C32.2046 11.2162 33.1434 12.3601 33.6978 13.6985C34.2521 15.0368 34.3972 16.5095 34.1146 17.9303C33.832 19.351 33.1344 20.6561 32.1101 21.6804C31.0857 22.7047 29.7807 23.4023 28.3599 23.6849C26.9391 23.9675 25.4665 23.8225 24.1281 23.2681C22.7898 22.7138 21.6459 21.775 20.8411 20.5705C20.0363 19.366 19.6067 17.95 19.6067 16.5014L19.5732 15.455C19.5732 11.57 21.1165 7.84403 23.8637 5.09688C26.6108 2.34973 30.3368 0.806396 34.2218 0.806396V4.99172C32.8472 4.98802 31.4854 5.25688 30.2153 5.78274C28.9452 6.3086 27.7919 7.08103 26.8222 8.05537C26.4453 8.43156 26.0976 8.83592 25.7821 9.26493C26.1567 9.20634 26.5397 9.17495 26.931 9.17495V9.17704Z" fill="#4B439D" fill-opacity="1"/>
+                    </svg>
+                    <p class="text-base text-start text-[#6b6b6b] mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
+                    <h3 class="text-prupleAccent text-xl bgpr">Nike Wander</h3>
+                    <h6 class="text-[#9b9b9b] mb-2">Backend</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex mx-4 h-80 shadow-lg">
+                  <div class="w-[20%] h-80 ">
+                    <img src="./assets/images/testimonial.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
+                  </div>
+                  <div class="bg-[#e0e0e0] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80  rounded-tr-lg rounded-br-lg">
+                    <svg class="mb-2 inline py-10"  viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.09705 9.17704C9.54567 9.17704 10.9617 9.6066 12.1662 10.4114C13.3707 11.2162 14.3095 12.3601 14.8638 13.6985C15.4182 15.0368 15.5632 16.5095 15.2806 17.9303C14.998 19.351 14.3004 20.6561 13.2761 21.6804C12.2518 22.7047 10.9467 23.4023 9.52596 23.6849C8.10518 23.9675 6.6325 23.8225 5.29416 23.2681C3.95582 22.7138 2.81192 21.775 2.00711 20.5705C1.2023 19.366 0.77274 17.95 0.77274 16.5014L0.739258 15.455C0.739258 11.57 2.28259 7.84403 5.02974 5.09688C7.77689 2.34973 11.5028 0.806396 15.3879 0.806396V4.99172C14.0132 4.98802 12.6515 5.25688 11.3813 5.78274C10.1112 6.3086 8.95797 7.08103 7.98824 8.05537C7.61134 8.43156 7.26365 8.83592 6.94818 9.26493C7.32277 9.20634 7.70573 9.17495 8.09496 9.17495L8.09705 9.17704ZM26.931 9.17704C28.3796 9.17704 29.7957 9.6066 31.0002 10.4114C32.2046 11.2162 33.1434 12.3601 33.6978 13.6985C34.2521 15.0368 34.3972 16.5095 34.1146 17.9303C33.832 19.351 33.1344 20.6561 32.1101 21.6804C31.0857 22.7047 29.7807 23.4023 28.3599 23.6849C26.9391 23.9675 25.4665 23.8225 24.1281 23.2681C22.7898 22.7138 21.6459 21.775 20.8411 20.5705C20.0363 19.366 19.6067 17.95 19.6067 16.5014L19.5732 15.455C19.5732 11.57 21.1165 7.84403 23.8637 5.09688C26.6108 2.34973 30.3368 0.806396 34.2218 0.806396V4.99172C32.8472 4.98802 31.4854 5.25688 30.2153 5.78274C28.9452 6.3086 27.7919 7.08103 26.8222 8.05537C26.4453 8.43156 26.0976 8.83592 25.7821 9.26493C26.1567 9.20634 26.5397 9.17495 26.931 9.17495V9.17704Z" fill="#4B439D" fill-opacity="1"/>
+                    </svg>
+                    <p class="text-base text-start text-[#6b6b6b] mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
+                    <h3 class="text-prupleAccent text-xl bgpr">Nike Wander</h3>
+                    <h6 class="text-[#9b9b9b] mb-2">Backend</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex mx-4 h-80 shadow-lg">
+                  <div class="w-[20%] h-80 ">
+                    <img src="./assets/images/testimonial.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
+                  </div>
+                  <div class="bg-[#e0e0e0] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80  rounded-tr-lg rounded-br-lg">
+                    <svg class="mb-2 inline py-10"  viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M8.09705 9.17704C9.54567 9.17704 10.9617 9.6066 12.1662 10.4114C13.3707 11.2162 14.3095 12.3601 14.8638 13.6985C15.4182 15.0368 15.5632 16.5095 15.2806 17.9303C14.998 19.351 14.3004 20.6561 13.2761 21.6804C12.2518 22.7047 10.9467 23.4023 9.52596 23.6849C8.10518 23.9675 6.6325 23.8225 5.29416 23.2681C3.95582 22.7138 2.81192 21.775 2.00711 20.5705C1.2023 19.366 0.77274 17.95 0.77274 16.5014L0.739258 15.455C0.739258 11.57 2.28259 7.84403 5.02974 5.09688C7.77689 2.34973 11.5028 0.806396 15.3879 0.806396V4.99172C14.0132 4.98802 12.6515 5.25688 11.3813 5.78274C10.1112 6.3086 8.95797 7.08103 7.98824 8.05537C7.61134 8.43156 7.26365 8.83592 6.94818 9.26493C7.32277 9.20634 7.70573 9.17495 8.09496 9.17495L8.09705 9.17704ZM26.931 9.17704C28.3796 9.17704 29.7957 9.6066 31.0002 10.4114C32.2046 11.2162 33.1434 12.3601 33.6978 13.6985C34.2521 15.0368 34.3972 16.5095 34.1146 17.9303C33.832 19.351 33.1344 20.6561 32.1101 21.6804C31.0857 22.7047 29.7807 23.4023 28.3599 23.6849C26.9391 23.9675 25.4665 23.8225 24.1281 23.2681C22.7898 22.7138 21.6459 21.775 20.8411 20.5705C20.0363 19.366 19.6067 17.95 19.6067 16.5014L19.5732 15.455C19.5732 11.57 21.1165 7.84403 23.8637 5.09688C26.6108 2.34973 30.3368 0.806396 34.2218 0.806396V4.99172C32.8472 4.98802 31.4854 5.25688 30.2153 5.78274C28.9452 6.3086 27.7919 7.08103 26.8222 8.05537C26.4453 8.43156 26.0976 8.83592 25.7821 9.26493C26.1567 9.20634 26.5397 9.17495 26.931 9.17495V9.17704Z" fill="#4B439D" fill-opacity="1"/>
+                    </svg>
+                    <p class="text-base text-start text-[#6b6b6b] mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
+                    <h3 class="text-prupleAccent text-xl bgpr">Nike Wander</h3>
+                    <h6 class="text-[#9b9b9b] mb-2">Backend</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next text-prupleAccent"></div>
+            <div class="swiper-button-prev text-prupleAccent"></div>
+          </div>
+          <!-- end new carousel -->
+
+      
+          <div class="block md:hidden">
             <div class="flex mx-4  h-56 mb-6">
               <div class="w-[30%] h-56">
                 <img src="./assets/images/testimonial.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
@@ -229,14 +292,14 @@
 
     <!-- Section starts -->
 
-    <section class="px-5">
+    <section class="px-5 md:bg-white rounded-md md:mx-16" id="contact">
       <div class="container mx-auto">
-        <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-14 my-16 md:my-24 text-white">Contact US!!</h1>
-        <div class="flex flex-col lg:flex-row">
+        <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-14 my-16 md:my-24 text-white md:text-prupleAccent md:pt-8">Contact US!!</h1>
+        <div class="flex flex-col lg:flex-row items-center lg:items-start lg:gap-x-16">
           <form class="w-full">
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
-                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                <label class="block uppercase tracking-wide text-white md:text-prupleAccent text-xs font-bold mb-2" for="grid-password">
                   Your Name
                 </label>
                 <input class="appearance-none block w-full bg-[#EEEEEE] text-gray-700 border border-gray-200 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="nick" type="text">
@@ -244,7 +307,7 @@
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
-                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                <label class="block uppercase tracking-wide text-white md:text-prupleAccent text-xs font-bold mb-2" for="grid-password">
                   Your Email
                 </label>
                 <input class="appearance-none block w-full bg-[#EEEEEE] text-gray-700 border border-gray-200 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email">
@@ -252,21 +315,21 @@
             </div>
             <div class="flex flex-wrap -mx-3 mb-6">
               <div class="w-full px-3">
-                <label class="block uppercase tracking-wide text-white text-xs font-bold mb-2" for="grid-password">
+                <label class="block uppercase tracking-wide text-white md:text-prupleAccent text-xs font-bold mb-2" for="grid-password">
                   Your Message  
                 </label>
                 <textarea class=" no-resize appearance-none block w-full bg-[#EEEEEE] text-gray-700 border border-gray-200 rounded-md py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500 h-48 resize-none" id="message"></textarea>
               </div>
             </div>
-            <div class="flex justify-center items-center">
-                <button class="shadow bg-white focus:shadow-outline focus:outline-none text-prupleAccent font-bold py-3 px-10 text-base rounded" type="button">
+            <div class="flex justify-center items-center md:justify-start md:mb-8">
+                <button class="shadow bg-white md:bg-prupleAccent md:text-white focus:shadow-outline focus:outline-none text-prupleAccent font-bold py-3 px-10 text-base rounded" type="button">
                   Send Message
                 </button>
             </div>
           </form>
           <div class="md:w-2/3 w-full mt-20">
-            <div>
-              <div class="text-white text-xl text-center">
+            <div >
+              <div class="text-white md:text-prupleAccent text-xl text-center md:text-start">
                 <div>
                   <i class="fa-solid fa-envelope text-2xl mr-2"></i><a class="" href="mailto:mailhere@gmail.com">mailhere@gmail.com</a>
                 </div>
@@ -280,7 +343,7 @@
                   <i class="text-3xl mx-2 fa-brands fab fab fa-youtube"></i>
                 </div>
               </div>
-              <div class="text-center text-white">
+              <div class="text-center md:text-start text-white md:text-prupleAccent">
                 <p class="text-[18px] mt-8 mb-4">Placeholder</p>
                 <p class="text-base mb-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae veniam quisquam repudiandae praesentium est totam odio atque tempora rem!</p>
               </div>
@@ -294,9 +357,9 @@
 
     <!-- Footer Starts -->
     
-    <footer class="mb-12">
+    <footer class="mb-12 md:my-20">
       <div class="container mx-auto">
-        <div class="flex text-white justify-center gap-8">
+        <div class="flex text-white justify-center gap-8 md:space-x-16">
           <div>
             <h1 class="text-xl mb-3 font-semibold">Usefull Links</h1>
             <div class="space-y-2">
@@ -341,6 +404,15 @@
       var swiper = new Swiper(".mySwiper", {
         pagination: {
           el: ".swiper-pagination",
+        },
+      });
+    </script>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
       });
     </script>
