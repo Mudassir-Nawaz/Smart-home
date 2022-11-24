@@ -4,30 +4,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landinga Page</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <script src="https://kit.fontawesome.com/37543023ae.js" crossorigin="anonymous"></script>
+
+    <style>    
+        html {
+            scroll-behavior: smooth;
+            -webkit-scroll-behavior: smooth;
+        }
+        .scroll-downs {
+        position: absolute;
+        /* top: 0; */
+        right: 0;
+        bottom: 20px;
+        left: 0;
+        margin: auto;
+        
+        width :34px;
+        height: 55px;
+        }
+        .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 2px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+        }
+        .scroller {
+        width: 3px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation-name: scroll;
+        animation-duration: 2.2s;
+        animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+        animation-iteration-count: infinite;
+        }
+        @keyframes scroll {
+        0% { opacity: 0; }
+        10% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(15px); opacity: 0;}
+        }
+        </style>
+
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.css" integrity="sha512-FKlWnaJrtBEqH+gNy8kvp+/61S+8iOKb5tG+EKCQ3Fc3iUYr9MvnywpkZBcuNKrxQxlnZYpNwDgkZ2atX7wVVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link rel="stylesheet" href="../assets/css/output.css">
 </head>
-<body>
-    <div class="container-custom">
+<body class="relative">
+    <div id="full-page">
         <!-- Navbar for large screens -->
-        <header class="text-whiteAccent body-font hidden md:block px-4 pt-2">
-            <div class="container mx-auto flex justify-between p-5 items-center ">
-              <a class="flex title-font font-medium items-center mb-4 md:mb-0">
-                <span class="ml-3 text-xl">LogoHere</span>
-              </a>
-              <nav class="flex flex-wrap items-center text-base justify-center">
-                <a href="#" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">Home</a>
-                <a href="#features" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">Features</a>
-                <a href="#pricing" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">Pricing</a>
-                <a href="#faq" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">FAQ</a>
-              </nav>
-              <button class="inline-flex items-center bg-whiteAccent text-prupleAccent border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 text-xl rounded md:mt-0 font-semibold">Get Started</button>
+        <header class="text-whiteAccent body-font  py-4 fixed w-full bg-transparent z-50">
+            <div class="flex justify-between items-center md:px-4 py-4 px-2"  id="navbar">
+                <a class="flex title-font font-medium items-center  md:mb-0 ">
+                  <span class="ml-3 text-xl">LogoHere</span>
+                </a>
+                <div class="container mx-auto justify-center p-5 items-center hidden md:flex">
+                  <nav class="flex flex-wrap items-center text-base justify-center">
+                    <a href="/" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">Home</a>
+                    <a href="#features" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">Features</a>
+                    <a href="#pricing" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">Pricing</a>
+                    <a href="#faq" class="mr-6 text-base font-[400] focus:font-semibold hover:text-gray-900">FAQ</a>
+                  </nav>
+                </div>
+                <button class="hidden md:block w-56 bg-whiteAccent text-prupleAccent border-0 py-3 px-6 text-xl rounded md:mt-0 font-semibold ">Get Started</button>
+                <div id="navBtnOpen" class="block md:hidden bg-transparent">
+                  <i id="menubar-icon" class="fa-light fas fa-bars text-xl"></i>
+                </div>
             </div>
         </header>
         <!-- End -->
+          <!-- Mobile Menu -->
+        <div class="absolute left-0 top-0 hidden z-50" id="mobileMenu">
+            <div class="flex bg-white text w-[195px] h-[120vh] pt-14 text-[#493FB2] text-center px">
+                <ul class="w-full">
+                    <a href="#" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Home</a>
+                    <a href="./landing/" class="text-xl block focus:font-semibold rounded py-2">Landing Page</a>
+                    <a href="#service" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Service</a>
+                    <a href="#testimonials" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Testimonials</a>
+                    <a href="#contact" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Contact</a>
+                </ul>
+            </div>
+        </div>
+        <!-- navbar end -->
+        <!-- section starts -->
+        <section class="section flex items-center relative section-custom">
+            <img src="../assets/images/landing-page/slide1-bg.png" alt="" class="w-1/2 absolute -z-50 bottom-0 left-0 hidden md:block">
+            <img src="../assets/images/landing-page/string.png" alt="" class="absolute -z-50 top-0 left-0 hidden md:block">
+            <div class="mx-auto container">
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center px-4 py-4 md:px-8">
+                    <div class="w-full md:w-[60%] space-y-4 md:space-y-6 lg:space-y-8">
+                        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-[72px] xl:leading-none text-whiteAccent">This is a Place holder for this</h1>
+                        <p class="text-base md:text-lg lg:text-xl text-whiteSecond">Lorem ipsum dolor sit amet, consectetur adipiscing elit.contetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscin</p>
+                        <button class="bg-whiteAccent text-prupleAccent border-0 py-2 md:py-3 px-8  text-lg md:text-xl rounded md:mt-0 font-semibold ">Start Now</button>
+                    </div>
+                    <div class="ml-auto md:mx-0 md:w-[40%] mt-4">
+                        <img src="../assets/images/landing-page/hero-image.png" alt="" class="max-w-[300px] md:max-w-full ml-auto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section ends -->
+        <section class="section section-custom">
+            <p class="">hi</p>
+        </section>
+        <section class="section section-custom">
+            <p class="">hi</p>
+        </section>
+        <section class="section section-custom">
+            <p class="">hi</p>
+        </section>
     </div>
+    
+    <!-- Scroll Mouse -->
+    <div class="scroll-downs absolute">
+        <div class="mousey">
+          <div class="scroller"></div>
+        </div>
+    </div>
+    <script>
+        new fullpage('#full-page', {
+            // options
+            autoScrolling: true,
+            scrollHorizonatally: true
+        });
+
+
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js" integrity="sha512-rNf09cQHIWzD8BU37lIb3rInygeWXW2hVqJ7niVtTPXWuVR3aFiph1eFIeDiEQV8J45u0qfp7ng8I3TzJHY4Eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- JS script -->
+
+    <script src="../assets/js/fullpage.js"></script>
+    <script src="../assets/js/script.js"></script>
+    
+    
+    <!-- GSAP -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+         -->
     <script src="../assets/js/landing.js"></script>
+
 </body>
-</html>
+</html> 

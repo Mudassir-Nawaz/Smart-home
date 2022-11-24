@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+    
     body {
         background: linear-gradient(168.19deg, #483EB3 0%, rgba(72, 62, 179, 0.69) 99.04%);
         /* min-height: 900px; */
@@ -10,40 +11,50 @@
 }
 
 
-
 .swiper {
-    width: 100%;
-    height: 100%;
-  }
+  width: 100%;
+  height: 100%;
+}
 
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    height:100%;
-    background: transparent;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height:100%;
+  background: transparent;
 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
 
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
-  .swiper-pagination {
-    margin: 100px 0 0 0;
-  }
+.swiper-pagination {
+  margin: 100px 0 0 0;
+}
+
+.section-custom {
+  /* scroll-snap-align: start; */
+  /* height: 100vh; */
+}
+
+.container-custom {
+  /* scroll-snap-type: y mandatory; */
+  /* overflow-y: scroll; */
+  /* height: 100vh; */
+}
