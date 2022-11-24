@@ -13,15 +13,15 @@
     <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/37543023ae.js" crossorigin="anonymous"></script>
 
-    <!-- Swiper -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/output.css">
+
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>     -->
 
-    <link rel="stylesheet" href="./assets/css/output.css">
     <style>
       .swiper {
         width: 100%;
@@ -55,34 +55,10 @@
         height: 100%;
         object-fit: cover;
       }
-
-      .hero-1 {
-        background-image: url('./assets/images/mobile-hero.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin-right: 20px;
-        /* height: 200px; */
-      }
-
-      .hero-2 {
-        background-image: url("./assets/images/hero-bg1.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        /* height: 200px; */
-      }
-
-      .hero-pc1 {
-        background-image: url('./assets/images/hero-bg2.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: bottom;
-
-      }
-      .hero-pc2 {
-        background-image: url('./assets/images/hero-bg1.png');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position-y: bottom;
+      @media (max-width:768px) {
+        .small-hide {
+          display: none !important;
+        }
       }
     </style>
     <title>Title Here</title>
@@ -165,10 +141,10 @@
                 <!-- <div class="swiper-pagination"></div> -->
               </div>
             </div>
-            <div class="swiper-button-next text-white top-[50%] hidden md:block"></div>
-            <div class="swiper-button-prev text-white top-[50%] hidden md:block"></div>
+            <div class="swiper-button-next text-white top-[50%] small-hide"></div>
+            <div class="swiper-button-prev text-white top-[50%] small-hide"></div>
           </div>
-        <img src="./assets/images/string.png" class="absolute w-[100vw] top-0 -z-50" alt="">
+        <img src="./assets/images/landing-page/string.png" class="absolute w-[100vw] top-0 -z-50" alt="">
     </section>  
     <!-- section ends -->
     

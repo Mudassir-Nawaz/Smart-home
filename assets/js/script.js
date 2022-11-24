@@ -17,18 +17,16 @@ menuItem.forEach((item)=> {
     })
 })
 
-// window.addEventListener('scroll', (event) => {
+window.addEventListener('scroll', (event) => {
 
-//     // nav.classList.remove('bg-transparent')
-//     // nav.classList.add('bg-white')
 
-//     menu.classList.add('hidden')
-//     if(menubarIcon.classList.contains('fa-xmark')){
-//         menubarIcon.classList.toggle('fa-xmark');
-//         menubarIcon.classList.toggle('fa-bars');
-//     }
+    menu.classList.add('hidden')
+    if(menubarIcon.classList.contains('fa-xmark')){
+        menubarIcon.classList.toggle('fa-xmark');
+        menubarIcon.classList.toggle('fa-bars');
+    }
 
-// });
+});
 
 menubarIcon.addEventListener('click', ()=> {
     menubarIcon.classList.toggle('fa-bars');

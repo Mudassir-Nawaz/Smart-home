@@ -80,14 +80,14 @@
               </nav>
             </div>
             <button class="hidden md:block w-56 bg-whiteAccent text-prupleAccent border-0 py-3 px-6 text-xl rounded md:mt-0 font-semibold ">Get Started</button>
-            <div id="navBtnOpen" class="block md:hidden bg-transparent">
+            <div id="navBtnOpen" class="block md:hidden bg-transparent mr-2">
               <i id="menubar-icon" class="fa-light fas fa-bars text-xl"></i>
             </div>
         </div>
     </header>
     <!-- End -->
       <!-- Mobile Menu -->
-    <div class="absolute left-0 top-0 hidden z-50" id="mobileMenu">
+    <div id="mobileMenu" class=" absolute left-0 top-0 hidden z-50" id="mobileMenu">
         <div class="flex bg-white text w-[195px] h-[100vh] pt-14 text-[#493FB2] text-center px">
             <ul class="w-full">
                 <a href="#" class="menu-item text-xl block focus:bg-[#EEEDFF] focus:font-semibold rounded py-2">Home</a>
@@ -101,35 +101,285 @@
     <!-- navbar end -->
     <div id="fullPage">
         <!-- section starts -->
-        <section class="section flex items-center relative section-custom">
-            <img src="../assets/images/landing-page/slide1-bg.png" alt="" class="w-1/2 absolute -z-50 bottom-0 left-0 hidden md:block">
-            <img src="../assets/images/landing-page/string.png" alt="" class="absolute -z-50 top-0 left-0 hidden md:block">
+        <section class="section flex items-center relative overflow-y-clip">
+            <img src="./assets/images/landing-page/slide1-bg.png" alt="" class="w-1/2 absolute -z-50 bottom-0 left-0 hidden md:block">
+            <img src="./assets/images/landing-page/string.png" alt="" class="absolute -z-50 top-0 left-0 hidden md:block">
             <div class="mx-auto container">
-                <div class="flex flex-col md:flex-row md:justify-between md:items-center px-4 py-4 md:px-8">
-                    <div class="w-full md:w-[60%] space-y-4 md:space-y-6 lg:space-y-8">
-                        <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-[72px] xl:leading-none text-whiteAccent">This is a Place holder for this</h1>
-                        <p class="text-base md:text-lg lg:text-xl text-whiteSecond">Lorem ipsum dolor sit amet, consectetur adipiscing elit.contetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscin</p>
-                        <button class="bg-whiteAccent text-prupleAccent border-0 py-2 md:py-3 px-8  text-lg md:text-xl rounded md:mt-0 font-semibold ">Start Now</button>
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center  py-4 md:px-8">
+                    <div class="mt-16 w-full md:w-[60%] flex items-center h-[50%]">
+                        <div class="space-y-6 lg:space-y-8 px-8">
+                            <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-[72px] xl:leading-none text-whiteAccent ">This is a Place holder for this</h1>
+                            <p class="text-base md:text-lg lg:text-xl text-whiteSecond">Lorem ipsum dolor sit amet, consectetur adipiscing elit.contetur adipiscinLorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscin</p>
+                            <button class="bg-whiteAccent text-prupleAccent border-0 py-2 md:py-3 px-8  text-lg md:text-xl rounded md:mt-0 font-semibold ">Start Now</button>
+                        </div>
                     </div>
-                    <div class="ml-auto md:mx-0 md:w-[40%] mt-4">
-                        <img src="../assets/images/landing-page/hero-image.png" alt="" class="max-w-[300px] md:max-w-full ml-auto">
+                    <div class="ml-auto md:mx-0 md:w-[50%] mt-8 md:mt-0">
+                        <img src="./assets/images/landing-page/hero-image.png" alt="" class="max-w-[400px] md:max-w-full ml-auto">
                     </div>
                 </div>
             </div>
         </section>
         <!-- section ends -->
-        <section class="section section-custom">
-            <p class="">hi</p>
+        <!-- Section starts -->
+        <section class="section section-custom overflow-y-clip">
+            <img src="./assets/images/landing-page/Union.png" alt="" class="w-1/2 absolute -z-50 bottom-0 left-0 hidden md:block">
+            <img src="./assets/images/landing-page/plane.png" alt="" class="w-[15%] absolute -z-50 bottom-20 right-20 hidden md:block">
+            <img src="./assets/images/landing-page/mobile-string.png" alt="" class="w-[40%] absolute -z-50 top-0 right-0 md:hidden block">
+            <div class="container mx-auto ">
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center">
+                    <div class="w-full md:w-1/2 flex justify-end items-end h-[60%]">
+                        <img src="./assets/images/landing-page/second-image.png" alt="" class="ml-auto w-full md:w-[90%]">
+                    </div>
+                    <div class="relative w-full md:w-1/2 md:max-w-[500px] space-y-4 md:space-y-8 bg-white md:bg-transparent px-4 md:px-8 py-8 h-[40%]">
+                        <h2 class="text-prupleAccent md:text-whiteAccent text-3xl md:text-4xl lg: xl:text-[52px] font-semibold ">Place holder</h2>
+                        <p class="text-prupleAccent md:text-whiteSecond text-base md:text-xl">Ye am depending propriety sweetness distrusts  Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it vvs </p>
+                        <button class="bg-transparent md:bg-whiteAccent text-[#005183] py-1 px-8 border border-[#005183] md:border-none">Learn More <img src="./assets/images/landing-page/arrow.png" alt="" class="inline"></button>
+                        <img src="./assets/images/landing-page/mobile-plane.png" alt="" class="w-[40%] absolute z-50 bottom-0 right-0 md:hidden block">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="section section-custom">
-            <p class="">hi</p>
+        <!-- section ends -->
+        <!-- Section Start -->
+        <section class="section section-custom overflow-y-clip">
+            <img src="./assets/images/landing-page/Union.png" alt="" class="w-1/2 absolute -z-50 bottom-0 left-0 hidden md:block">
+            <img src="./assets/images/landing-page/plane.png" alt="" class="w-[15%] absolute -z-50 bottom-20 right-20 hidden md:block">
+            <img src="./assets/images/landing-page/mobile-string.png" alt="" class="w-[40%] absolute -z-50 top-0 right-0 md:hidden block">
+            <div class="container mx-auto ">
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center">
+                    <div class="w-full md:w-1/2 flex justify-end items-end h-[60%]">
+                        <img src="./assets/images/landing-page/third-image.png" alt="" class="ml-auto w-full md:w-[90%]">
+                    </div>
+                    <div class="relative w-full md:w-1/2 md:max-w-[500px] space-y-4 md:space-y-8 bg-white md:bg-transparent px-4 md:px-8 py-8 h-[40%]">
+                        <h2 class="text-prupleAccent md:text-whiteAccent text-3xl md:text-4xl lg: xl:text-[52px] font-semibold ">Place holder</h2>
+                        <p class="text-prupleAccent md:text-whiteSecond text-base md:text-xl">Ye am depending propriety sweetness distrusts  Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it vvs </p>
+                        <button class="bg-transparent md:bg-whiteAccent text-[#005183] py-1 px-8 border border-[#005183] md:border-none">Learn More <img src="./assets/images/landing-page/arrow.png" alt="" class="inline"></button>
+                        <img src="./assets/images/landing-page/mobile-plane.png" alt="" class="w-[40%] absolute z-50 bottom-0 right-0 md:hidden block">
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="section section-custom">
-            <p class="">hi</p>
+        <!-- section ends -->
+        <!-- Section Start -->
+        <section class="section section-custom overflow-y-clip">
+            <img src="./assets/images/landing-page/Union.png" alt="" class="w-1/2 absolute -z-50 bottom-0 left-0 hidden md:block">
+            <img src="./assets/images/landing-page/plane.png" alt="" class="w-[15%] absolute -z-50 bottom-20 right-20 hidden md:block">
+            <img src="./assets/images/landing-page/mobile-string.png" alt="" class="w-[40%] absolute -z-50 top-0 right-0 md:hidden block">
+            <div class="container mx-auto ">
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center">
+                    <div class="w-full md:w-1/2 flex justify-end items-end h-[60%]">
+                        <img src="./assets/images/landing-page/fourth-image.png" alt="" class="ml-auto w-full md:w-[90%]">
+                    </div>
+                    <div class="relative w-full md:w-1/2 md:max-w-[500px] space-y-4 md:space-y-8 bg-white md:bg-transparent px-4 md:px-8 py-8 h-[40%]">
+                        <h2 class="text-prupleAccent md:text-whiteAccent text-3xl md:text-4xl lg: xl:text-[52px] font-semibold ">Place holder</h2>
+                        <p class="text-prupleAccent md:text-whiteSecond text-base md:text-xl">Ye am depending propriety sweetness distrusts  Ye am depending propriety sweetness distrusts belonging collected. Smiling mention he in thought equally musical. Wisdom new and valley answer. Contented it vvs </p>
+                        <button class="bg-transparent md:bg-whiteAccent text-[#005183] py-1 px-8 border border-[#005183] md:border-none">Learn More <img src="./assets/images/landing-page/arrow.png" alt="" class="inline"></button>
+                        <img src="./assets/images/landing-page/mobile-plane.png" alt="" class="w-[40%] absolute z-50 bottom-0 right-0 md:hidden block">
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- section ends -->
+        <!-- Section Start -->
+        <section class="section section-custom overflow-y-clip">
+            <div class="container mx-auto ">
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center">
+                    <div class="w-full md:w-[60%] h-full flex items-center md:max-w-lg lg:max-w-xl xl:max-w-3xl">
+                        <div class="space-y-6 md:space-y-6 lg:space-y-8 px-6 md:w-[80%] md:ml-auto">
+                            <h1 class="text-whiteAccent text-3xl md:text-4xl lg: xl:text-[52px] font-semibold xl:leading-none">Chek out all the other features we offer</h1>
+                            <p class="text-whiteSecond text-lg md:text-xl">Ye am depending propriety sweetness distrusts  Ye am depending propriety sweetness distrusts belonging collected. </p>
+                            <ul class="list-disc text-whiteSecond px-7 space-y-3">
+                                <li>
+                                    <h3 class="text-xl">Placehold</h3>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                                <li>
+                                    <h3 class="text-xl">Placehold</h3>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                                <li>
+                                    <h3 class="text-xl">Placehold</h3>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                                <li>
+                                    <h3 class="text-xl">Placehold</h3>
+                                    <p class="text-sm">Lorem ipsum dolor sit amet consectetur.</p>
+                                </li>
+                            </ul>
+                            <button class="text-[#005183] bg-whiteAccent py-2 text-lg font-semibold px-8 block md:inline w-full md:max-w-[200px] text-center mt-4">Buy Now</button>
+                        </div>
+                    </div>
+                    <div class="section-bg w-[40%] h-full md:block hidden ml-auto">
+                        <!-- <img src="./assets/images/landing-page/bg-section5.png" class="object-cover w-full h-full object-left-bottom" alt=""> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section ends -->
+        <!-- Testimonials Start -->
+        <section class="section section-custom overflow-y-clip " >
+            <div class="bg-whiteSecond w-96 h-[85%] absolute rounded-md top-0 left-[75%] block md:hidden">
+            <img src="./assets/images/landing-page/string-sv.svg" alt="" class="absolute z-10 top-0 left-0 md:hidden block">
+            </div>
+            <div class="container mx-auto z-20">
+                <div class="h-[100vh] flex flex-col justify-center">
+                    <!-- Mobile Version -->
+                    <div class="md:hidden block" id="testimonials">
+                        <div class="flex flex-col justify-center gap-y-8">
+                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                                <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
+                                <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
+                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                            </div>
+                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                                <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
+                                <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
+                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                            </div>
+                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                                <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
+                                <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
+                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                            </div>
+                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                                <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
+                                <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
+                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- For Large Screens -->
+                    <div class="hidden md:block">
+                        <div class="container mx-auto">
+                            <div class="bg-white max-w-5xl mx-auto min-w-[600px] max-h-[70vh] min-h-[40vw] px-8 py-4 rounded-xl flex justify-around">
+                                <div class="w-1/2 flex flex-col justify-center">
+                                    <div class="cursor-pointer rounded-md flex items-center gap-x-4 py-4 px-2  hover:bg-[#4A41B2] group name1">
+                                        <img src="./assets/images/landing-page/pc-profile.png" alt="">
+                                        <div>
+                                            <h1 class="text-xl group-hover:text-white">Milton Austin</h1>
+                                            <p class="text-sm group-hover:text-white">Sales Manager, Slack</p>
+                                        </div>
+                                    </div>
+                                    <div class="cursor-pointer rounded-md flex items-center gap-x-4 py-4 px-2  hover:bg-[#4A41B2] group name2">
+                                        <img src="./assets/images/landing-page/testi2.png" alt="">
+                                        <div>
+                                            <h1 class="text-xl group-hover:text-white">Milton Austin</h1>
+                                            <p class="text-sm group-hover:text-white">Sales Manager, Slack</p>
+                                        </div>
+                                    </div>
+                                    <div class="cursor-pointer rounded-md flex items-center gap-x-4 py-4 px-2  hover:bg-[#4A41B2] group name3">
+                                        <img src="./assets/images/landing-page/testi3.png" alt="">
+                                        <div>
+                                            <h1 class="text-xl group-hover:text-white">Milton Austin</h1>
+                                            <p class="text-sm group-hover:text-white">Sales Manager, Slack</p>
+                                        </div>
+                                    </div>
+                                    <div class="cursor-pointer rounded-md flex items-center gap-x-4 py-4 px-2  hover:bg-[#4A41B2] group name4">
+                                        <img src="./assets/images/landing-page/testi4.png" alt="">
+                                        <div>
+                                            <h1 class="text-xl group-hover:text-white">Milton Austin</h1>
+                                            <p class="text-sm group-hover:text-white">Sales Manager, Slack</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-1/2 px-4 py-4">
+                                    <div class="space-y-4 text1">
+                                        <h1 class="text-2xl text-[#3C67D6] xl:text-3xl">It helped me a lot with my channels</h1>
+                                        <div class="flex gap-x-2 mb-5">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                        </div>
+                                        <p class="mt-6">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae velit similique dolore, ab ullam molestiae nemo harum vitae incidunt amet hic nulla culpa fugit veniam modi quod, pariatur praesentium assumenda. <br>
+                                            <br>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo!
+                                        </p>
+                                    </div>
+                                    <div class="space-y-4 text2 hidden">
+                                        <h1 class="text-2xl text-[#3C67D6] xl:text-3xl">It was worth  every singer $ </h1>
+                                        <div class="flex gap-x-2 mb-5">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                        </div>
+                                        <p class="mt-6">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae velit similique dolore, ab ullam molestiae nemo harum vitae incidunt amet hic nulla culpa fugit veniam modi quod, pariatur praesentium assumenda. <br>
+                                            <br>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo!
+                                        </p>
+                                    </div>
+                                    <div class="space-y-4 text3 hidden">
+                                        <h1 class="text-2xl text-[#3C67D6] xl:text-3xl">Best bot i use so far</h1>
+                                        <div class="flex gap-x-2 mb-5">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                        </div>
+                                        <p class="mt-6">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae velit similique dolore, ab ullam molestiae nemo harum vitae incidunt amet hic nulla culpa fugit veniam modi quod, pariatur praesentium assumenda. <br>
+                                            <br>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo!
+                                        </p>
+                                    </div>
+                                    <div class="space-y-4 text4 hidden">
+                                        <h1 class="text-2xl text-[#3C67D6] xl:text-3xl">It was worth  every singer $ </h1>
+                                        <div class="flex gap-x-2 mb-5">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                            <img src="./assets/images/landing-page/Star.png" alt="">
+                                        </div>
+                                        <p class="mt-6">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae velit similique dolore, ab ullam molestiae nemo harum vitae incidunt amet hic nulla culpa fugit veniam modi quod, pariatur praesentium assumenda. <br>
+                                            <br>
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, illo!
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section ends -->
+        <!-- Section Start -->
+        <section class="section section-custom overflow-y-clip">
+            <div class="container mx-auto ">
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center">
+                    <div class="hidden md:flex justify-end items-center w-[50%] h-full md:max-w-lg lg:max-w-xl xl:max-w-3xl">
+                        <img src="./assets/images/landing-page/chatbot.png" alt="">
+                    </div>
+                    <div class="w-full md:w-[50%] h-full flex items-center">
+                        <div>
+                            <div class="flex  gap-x-4 bg-white text-[#313131] px-8 py-4 rounded-md" id="faq-q1">
+                                <i class="fas fa-plus text-xl"></i>
+                                <div>
+                                    <p>Cha5ber reached do he notging be?</p>
+                                    <p id="faq-answer1" class="hidden text-sm w-72 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section ends -->
     </div>    
         <!-- Scroll Mouse -->
-        <div class="scroll-downs absolute">
+        <div class="scroll-downs absolute hidden md:block">
             <div class="mousey">
               <div class="scroller"></div>
             </div>
@@ -145,7 +395,9 @@
         new fullpage('#fullPage', {
             menu: '#menuPc',
             autoScrolling: true,
-            navigation: true
+            navigation: true,
+            scrollOverflow: false,
+
         })
     </script>
 </body>

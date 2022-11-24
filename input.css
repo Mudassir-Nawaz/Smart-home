@@ -48,13 +48,8 @@
   margin: 100px 0 0 0;
 }
 
-.section-custom {
-  /* scroll-snap-align: start; */
-  /* height: 100vh; */
-}
-
-.container-custom {
-  /* scroll-snap-type: y mandatory; */
-  /* overflow-y: scroll; */
-  /* height: 100vh; */
+.section-bg {
+  background-image: url('../images/landing-page/bg-section5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
