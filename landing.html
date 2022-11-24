@@ -58,6 +58,9 @@
         span {
             background: white !important;        
         }
+        .fp-watermark {
+            display: none;
+        }
         </style>
     <title>Fullpage JS</title>
 </head>
@@ -137,20 +140,13 @@
 
     <!-- Fullpage JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.js" integrity="sha512-rNf09cQHIWzD8BU37lIb3rInygeWXW2hVqJ7niVtTPXWuVR3aFiph1eFIeDiEQV8J45u0qfp7ng8I3TzJHY4Eg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <style>
-        .fp-watermark {
-            display: none;
-        }
-    </style>
+    <!-- Fullpage Configuration -->
     <script>
         new fullpage('#fullPage', {
             menu: '#menuPc',
             autoScrolling: true,
             navigation: true
         })
-
-
     </script>
 </body>
 </html>
