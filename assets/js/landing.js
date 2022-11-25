@@ -13,10 +13,10 @@ const text2 = document.querySelector('.text2')
 const text3 = document.querySelector('.text3')
 const text4 = document.querySelector('.text4')
 // FAQ Q
-const faq1 = document.querySelector('#faq-q1');
+const acc = document.querySelectorAll('#faq-q');
 
 // FAQ A
-const faqA1 = document.querySelector('#faq-answer1')
+const faqA = document.querySelector('#faq-answer')
 
 name2.addEventListener('click', ()=> {
     text2.classList.remove('hidden')
@@ -47,7 +47,32 @@ name1.addEventListener('click', ()=> {
     text4.classList.add('hidden')
 })
 
-// FAQ Events
-faq1.addEventListener('click', ()=> {
-    faqA1.classList.toggle('hidden')
-})
+for (let i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+  
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+}
+
+
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+    let icon = this.firstElementChild;
+    icon.classList.toggle('fa-plus');
+    icon.classList.toggle('fa-minus');
+  });
+}
+

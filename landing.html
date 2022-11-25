@@ -11,6 +11,13 @@
     <!-- fullpage CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.15/fullpage.min.css" integrity="sha512-FKlWnaJrtBEqH+gNy8kvp+/61S+8iOKb5tG+EKCQ3Fc3iUYr9MvnywpkZBcuNKrxQxlnZYpNwDgkZ2atX7wVVg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/output.css">
 
@@ -43,7 +50,7 @@
         .scroller {
         width: 3px;
         height: 10px;
-        border-radius: 25%;
+        border-radius: 50%;
         background-color: #fff;
         animation-name: scroll;
         animation-duration: 2.2s;
@@ -62,6 +69,71 @@
             display: none;
         }
         </style>
+        <!-- Demo styles -->
+    <style>
+        .swiper-container {
+            width: 450px !important;
+            margin: 0 auto !important;
+            height: 100%;
+        }
+        .swiper-wrapper {
+            width: 100% !important;
+            margin: 0 auto  !important;
+            margin-left: 50px;
+            display: flex;
+            justify-content: safe start;
+            align-items: center;
+        }
+        .swiper-slide {
+            width: 100% !important;
+            margin: 0 auto !important;
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+        .swiper-pagination {
+            position: absolute;
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 20px;
+            width: auto !important;
+            left: auto !important;
+            margin: 0;
+        }
+        .swiper-pagination-bullet {
+            padding: 5px 10px;
+            margin: 0;
+            border-radius: 4px;
+            width: auto;
+            height: 30px;
+            text-align: center;
+            /*line-height: 30px;*/
+            opacity: 0.7;
+            font-size: 12px;
+            color:#9F96FF;
+            background: #fff;
+        }
+        .swiper-pagination-bullet-active {
+            /*margin: 0px !important;*/
+            /*gap: 0px !important;*/
+            /* margin-top: -10px; */
+            color:#fff;
+            background-color: #4B41B1 !important;
+        }
+      </style>
     <title>Fullpage JS</title>
 </head>
 <body class="relative">
@@ -358,22 +430,522 @@
         <!-- Section Start -->
         <section class="section section-custom overflow-y-clip">
             <div class="container mx-auto ">
-                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center">
+                <div class="flex flex-col md:flex-row h-[100vh] justify-between md:justify-center md:items-center mx-auto">
                     <div class="hidden md:flex justify-end items-center w-[50%] h-full md:max-w-lg lg:max-w-xl xl:max-w-3xl">
                         <img src="./assets/images/landing-page/chatbot.png" alt="">
                     </div>
-                    <div class="w-full md:w-[50%] h-full flex items-center">
-                        <div>
-                            <div class="flex  gap-x-4 bg-white text-[#313131] px-8 py-4 rounded-md" id="faq-q1">
-                                <i class="fas fa-plus text-xl"></i>
-                                <div>
-                                    <p>Cha5ber reached do he notging be?</p>
-                                    <p id="faq-answer1" class="hidden text-sm w-72 mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
+                    <div class="w-full md:w-[50%] h-full flex items-center md:justify-start mx-auto px-4">
+                        <div class="max-w-xl">
+                            <div class="text-[#313131] rounded-md mx-auto "> 
+                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
+                                <div class="pb-4 -mt-2 pt-4 rounded-b-md w-full max-h-0 transition-all duration-200 hidden overflow-hidden bg-white px-8" id="faq-answer">
+                                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
+                                </div>
+                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
+                                <div class="pb-4 -mt-2 pt-4 rounded-b-md w-full max-h-0 transition-all duration-200 hidden overflow-hidden bg-white px-8" id="faq-answer">
+                                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
+                                </div>
+                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
+                                <div class="pb-4 -mt-2 pt-4 rounded-b-md w-full max-h-0 transition-all duration-200 hidden overflow-hidden bg-white px-8" id="faq-answer">
+                                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
+                                </div>
+                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
+                                <div class="pb-4 -mt-2 pt-4 rounded-b-md w-full max-h-0 transition-all duration-200 hidden overflow-hidden bg-white px-8" id="faq-answer">
+                                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- section ends -->
+        <!-- Section Start -->
+        <section class="section section-custom overflow-y-clip">
+            <div class="min-h-screen flex justify-center items-center">
+                <div class="">
+                    <div class="text-center mb-4">
+                        <button class="py-1 px-10 text-white rounded-md border-white border">Monthly</button>
+                        <button class="ml-4 py-1 px-10 bg-white text-prupleAccent rounded-md border-white border">Yearly</button>
+                    </div>
+                    <!-- Mobile -->
+                    <div class="flex md:hidden">
+                        <!-- Slider main container -->
+                        <div class="swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="w-[70%] bg-transparent">
+                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
+                                            <h1 class="text-black font-semibold text-2xl">Free</h1>
+                                            <p class="pt-2 tracking-wide">
+                                                <p class="inline align-top">$ </p>
+                                                <p class="inline text-4xl font-semibold">0</p>
+                                                <p class="inline font-medium">/ mo</p>
+                                            </p>
+                                            <div class="mt-16 mx-8 py-4">
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-[70%] bg-transparent">
+                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
+                                            <h1 class="text-black font-semibold text-2xl">Basic</h1>
+                                            <p class="pt-2 tracking-wide">
+                                                <p class="inline align-top">$ </p>
+                                                <p class="inline text-4xl font-semibold">0</p>
+                                                <p class="inline font-medium">/ mo</p>
+                                            </p>
+                                            <div class="mt-16 mx-8 py-4">
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-[70%] bg-transparent">
+                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner relative">
+                                            <p class="bg-prupleAccent text-white py-1 px-8 mb-4 absolute -right-4 top-8 rotate-45">Recomended</p>
+                                            <h1 class="text-black font-semibold text-2xl">Plus</h1>
+                                            <p class="pt-2 tracking-wide">
+                                                <p class="inline align-top">$ </p>
+                                                <p class="inline text-4xl font-semibold">0</p>
+                                                <p class="inline font-medium">/ mo</p>
+                                            </p>
+                                            <div class="mt-16 mx-8 py-4">
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="w-[70%] bg-transparent">
+                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
+                                            <h1 class="text-black font-semibold text-2xl">Pro</h1>
+                                            <p class="pt-2 tracking-wide">
+                                                <p class="inline align-top">$ </p>
+                                                <p class="inline text-4xl font-semibold">0</p>
+                                                <p class="inline font-medium">/ mo</p>
+                                            </p>
+                                            <div class="mt-16 mx-8 py-4">
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                                                <p class="font-semibold text-left">
+                                                    <p class="inline material-icons align-middle">
+                                                        <i class="fas fa-check text-prupleAccent"></i>
+                                                    </p>
+                                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                                </p>
+                        
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
+                    <!-- Large Screens -->
+                    <div class="pt-12 md:flex mx-8 hidden">
+                        <!-- Free Card -->
+                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
+                            <h1 class="text-black font-semibold text-2xl">Free</h1>
+                            <p class="pt-2 tracking-wide">
+                                <p class="inline align-top">$ </p>
+                                <p class="inline text-4xl font-semibold">0</p>
+                                <p class="inline font-medium">/ mo</p>
+                            </p>
+                            <div class="mt-16 mx-8 py-4">
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+        
+                            </div>
+                        </div>
+                        <!-- Basic Card -->
+                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
+                            <h1 class="text-black font-semibold text-2xl">Basic</h1>
+                            <p class="pt-2 tracking-wide">
+                                <p class="inline align-top">$ </p>
+                                <p class="inline text-4xl font-semibold">0</p>
+                                <p class="inline font-medium">/ mo</p>
+                            </p>
+                            <div class="mt-16 mx-8 py-4">
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+        
+                            </div>
+                        </div>
+                        <!-- Plus Card -->
+                        <div class="lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-xl space-y-6 py-8 border border-prupleAccent scale-110">
+                            <p class="bg-prupleAccent text-white py-1 px-8 mb-4">Recomended</p>
+                            <h1 class="text-black font-semibold text-2xl">Plus</h1>
+                            <div>
+                                <p class="pt-2 tracking-wide">
+                                    <p class="inline align-top">$ </p>
+                                    <p class="inline text-4xl font-semibold">0</p>
+                                    <p class="inline font-medium">/ mo</p>
+                                </p>
+                            </div>
+                            <div class="mt-16 mx-8 py-4">
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+        
+                            </div>
+                        </div>
+                        <!-- Pro Card -->
+                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-xl">
+                            <h1 class="text-black font-semibold text-2xl">Pro</h1>
+                            <p class="pt-2 tracking-wide">
+                                <p class="inline align-top">$ </p>
+                                <p class="inline text-4xl font-semibold">0</p>
+                                <p class="inline font-medium">/ mo</p>
+                            </p>
+                            <div class="mt-16 mx-8 py-4">
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+                                <p class="font-semibold text-left">
+                                    <p class="inline material-icons align-middle">
+                                        <i class="fas fa-check text-prupleAccent"></i>
+                                    </p>
+                                    <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
+                                </p>
+        
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section ends -->
+        <!-- Section Start -->
+        <section class="section section-custom overflow-y-clip items-end">
+            <div class="container mx-auto flex flex-col justify-between min-h-screen">
+                <div class="grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-2 px-4 mt-24 md:mt-40 lg:mt-52">
+                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
+                        <img src="./assets/images/landing-page/brackets-hand.png" alt="">
+                        <div>
+                            <h1 class="text-[#201E8B] text-base font-semibold">Fast placehold Message</h1>
+                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
+                        <img src="./assets/images/landing-page/support.png" alt="">
+                        <div>
+                            <h1 class="text-[#201E8B] text-base font-semibold">Maintained 24/7</h1>
+                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
+                        <div>
+                            <img src="./assets/images/landing-page/features.png" class="w-[70%]" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-[#201E8B] text-base font-semibold">Top Features</h1>
+                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
+                        <div class="flex items-center justify-center">
+                            <img src="./assets/images/landing-page/ease.png" class="w-[70%]" alt="">
+                        </div>
+                        <div>
+                            <h1 class="text-[#201E8B] text-base font-semibold">Easy to use</h1>
+                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <footer class="mb-12 md:my-20 mt-16 md:mt-24">
+                    <div class="container mx-auto">
+                      <div class="flex flex-col md:flex-row items-center text-white justify-center gap-8 md:space-x-16">
+                        <div class="flex gap-x-8 gap-y-4">
+                            <div>
+                              <h1 class="text-xl mb-3 font-semibold">Usefull Links</h1>
+                              <div class="space-y-2">
+                                <a class="block" href="#">Privat Policy</a>
+                                <a class="block" href="#">Terms and conditions</a>
+                                <a class="block" href="#">Disclamer</a>
+                                <a class="block" href="#">Support</a>
+                                <a class="block" href="#">FAQ</a>
+                              </div>
+                            </div>
+                            <div>
+                              <h1 class="text-xl mb-3 font-semibold">Company</h1>
+                              <div class="space-y-2">
+                                <a class="block" href="#">About Us</a>
+                                <a class="block" href="#">Blog</a>
+                                <a class="block" href="#">Services</a>
+                                <a class="block" href="#">Pricing</a>
+                                <a class="block" href="#">Partnership</a>
+                              </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-white text-xl text-center md:text-start">
+                                <div>
+                                  <i class="fa-solid fa-envelope text-2xl mr-2"></i><a class="" href="mailto:mailhere@gmail.com">mailhere@gmail.com</a>
+                                </div>
+                                <div>
+                                  <i class="fa-solid fas fa-phone text-2xl mr-2 "></i><a class="" href="tel:0045 26 71 99 53">0045 26 71 99 53</a>
+                                </div>
+                                <div class="my-8">
+                                  <i class="text-3xl mx-2 fa-brands fab fa-instagram"></i>
+                                  <i class="text-3xl mx-2 fa-brands fab fab fa-whatsapp"></i>
+                                  <i class="text-3xl mx-2 fa-brands fab fab fab fa-twitter"></i>
+                                  <i class="text-3xl mx-2 fa-brands fab fab fa-youtube"></i>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </footer>
             </div>
         </section>
         <!-- section ends -->
@@ -384,6 +956,25 @@
               <div class="scroller"></div>
             </div>
         </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var menu = ['Free', 'Basic', 'Plus', 'Pro']
+        var mySwiper = new Swiper ('.swiper-container', {
+        // If we need pagination
+        spaceBetween: 0,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+            },
+        },
+        })
+    </script>
     <!-- JS -->
     <script src="./assets/js/script.js"></script>
     <script src="./assets/js/landing.js"></script>
