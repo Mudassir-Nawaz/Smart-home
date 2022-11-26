@@ -1,3 +1,4 @@
+const holder = document.querySelector('#logoHolder');
 const mobileNav = document.querySelector('#mobileMenu');
 const documentBody = document.body;
 const menuBar = document.querySelector('#menubar-icon');
@@ -24,6 +25,7 @@ for (let v = 0; v < navItems.length; v++ ) {
   })
 }
 /* -------------------------- */
+
 // FAQ A
 const faqA = document.querySelector('#faq-answer')
 
@@ -85,3 +87,25 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
+// Nav LOGO
+
+holder.innerHTML = "Landing"
+
+body.addEventListener('mouseover', ()=> {
+  
+
+  console.log(documentBody.className.toString().includes("fp-viewing-second"))
+  if(documentBody.className.toString().includes('fp-viewing-firstPage')){
+    holder.innerHTML = "Landing"
+  }else if(documentBody.className.toString().includes('fp-viewing-second')){
+    holder.innerHTML = "Features"
+  }else if(documentBody.className.toString().includes('fp-viewing-sixth')){
+    holder.innerHTML = "Testimonials"
+  }else if(documentBody.className.toString().includes('fp-viewing-seventh')){
+    holder.innerHTML = "FAQ"
+  }else if(documentBody.className.toString().includes('fp-viewing-eight')){
+    holder.innerHTML = "Pricing"
+  }else if(documentBody.className.toString().includes('fp-viewing-nine')){
+    holder.innerHTML = "Services"
+  }
+})
