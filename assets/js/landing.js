@@ -26,7 +26,7 @@ for (let v = 0; v < navItems.length; v++ ) {
 }
 /* -------------------------- */
 
-// FAQ A
+// Testimonials
 const faqA = document.querySelector('#faq-answer')
 
 name2.addEventListener('click', ()=> {
@@ -58,6 +58,8 @@ name1.addEventListener('click', ()=> {
     text4.classList.add('hidden')
 })
 
+
+// For FAQ
 for (let i = 0; i < acc.length; i++) {
     acc[i].addEventListener("click", function() {
       this.classList.toggle("active");
@@ -70,7 +72,6 @@ for (let i = 0; i < acc.length; i++) {
       }
     });
 }
-
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
@@ -87,14 +88,14 @@ for (let i = 0; i < acc.length; i++) {
   });
 }
 
-// Nav LOGO
+
+
+// Funtion to change Header text
 
 holder.innerHTML = "Landing"
-
-body.addEventListener('mouseover', ()=> {
+setInterval(() => {
   
-
-  console.log(documentBody.className.toString().includes("fp-viewing-second"))
+  // console.log(documentBody.className.toString().includes("fp-viewing-second"))
   if(documentBody.className.toString().includes('fp-viewing-firstPage')){
     holder.innerHTML = "Landing"
   }else if(documentBody.className.toString().includes('fp-viewing-second')){
@@ -113,5 +114,48 @@ body.addEventListener('mouseover', ()=> {
     holder.innerHTML = "Pricing"
   }else if(documentBody.className.toString().includes('fp-viewing-nine')){
     holder.innerHTML = "Services"
+  }  
+}, 100);
+
+// For Background Change
+
+const navbarL = document.querySelector('#navbar')
+const links = document.querySelector('.links')
+const button = document.querySelector('#button')
+let linksChild = Array.from(links.children)
+
+setInterval(() => {
+  if (window.innerWidth >= 768) {
+    if(documentBody.classList.toString().includes('fp-viewing-firstPage')){
+      holder.classList.remove('text-prupleAccent')
+      holder.classList.add('text-white')
+      linksChild.forEach(child => {
+        child.classList.remove('text-prupleAccent')
+      });
+      linksChild.forEach(child => {
+        child.classList.add('text-white')
+      });
+  
+      navbarL.classList.remove('bg-white');
+  
+      button.classList.add('bg-whiteAccent')
+      button.classList.remove('bg-prupleAccent')
+      button.classList.add('text-prupleAccent')
+      button.classList.remove('text-whiteAccent')
+    }else{
+      navbarL.classList.add('bg-white')
+      holder.classList.add('text-prupleAccent')
+      linksChild.forEach(child => {
+        child.classList.add('text-prupleAccent')
+      });
+      
+      button.classList.remove('bg-whiteAccent')
+      button.classList.add('bg-prupleAccent')
+      button.classList.remove('text-prupleAccent')
+      button.classList.add('text-whiteAccent')
+  
+  
+    }  
   }
-})
+}, 100);
+
