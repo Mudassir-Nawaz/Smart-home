@@ -124,6 +124,7 @@ const links = document.querySelector('.links')
 const button = document.querySelector('#button')
 let linksChild = Array.from(links.children)
 
+
 setInterval(() => {
   if (window.innerWidth >= 768) {
     if(documentBody.classList.toString().includes('fp-viewing-firstPage')){
@@ -159,3 +160,13 @@ setInterval(() => {
   }
 }, 100);
 
+setInterval(() => {
+  if(documentBody.classList.toString().includes('fp-viewing-sixth')){
+    menuBar.classList.add('text-prupleAccent')
+    menuBar.classList.remove('text-white')
+  }else{
+    menuBar.classList.add('text-white')
+    menuBar.classList.remove('text-prupleAccent')
+    
+  }
+}, 100);
