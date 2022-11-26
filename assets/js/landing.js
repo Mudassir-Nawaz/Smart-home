@@ -14,7 +14,16 @@ const text3 = document.querySelector('.text3')
 const text4 = document.querySelector('.text4')
 // FAQ Q
 const acc = document.querySelectorAll('#faq-q');
+// Navbar Landing Page
+const navItems = document.querySelector('#nav-item-list').children;
 
+for (let v = 0; v < navItems.length; v++ ) {
+  navItems[v].addEventListener('click', function() {
+      menubarIcon.classList.toggle('fa-xmark');
+      menubarIcon.classList.toggle('fa-bars');
+  })
+}
+/* -------------------------- */
 // FAQ A
 const faqA = document.querySelector('#faq-answer')
 
