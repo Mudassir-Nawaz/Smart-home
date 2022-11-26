@@ -99,6 +99,12 @@ body.addEventListener('mouseover', ()=> {
     holder.innerHTML = "Landing"
   }else if(documentBody.className.toString().includes('fp-viewing-second')){
     holder.innerHTML = "Features"
+  }else if(documentBody.className.toString().includes('fp-viewing-third')){
+    holder.innerHTML = "Features"
+  }else if(documentBody.className.toString().includes('fp-viewing-fourth')){
+    holder.innerHTML = "Features"
+  }else if(documentBody.className.toString().includes('fp-viewing-fifth')){
+    holder.innerHTML = "Features"
   }else if(documentBody.className.toString().includes('fp-viewing-sixth')){
     holder.innerHTML = "Testimonials"
   }else if(documentBody.className.toString().includes('fp-viewing-seventh')){
