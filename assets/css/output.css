@@ -878,6 +878,10 @@ body {
   height: 85%;
 }
 
+.h-96 {
+  height: 24rem;
+}
+
 .max-h-52 {
   max-height: 13rem;
 }
@@ -896,6 +900,18 @@ body {
 
 .min-h-screen {
   min-height: 100vh;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-\[453px\] {
+  min-height: 453px;
+}
+
+.min-h-\[399px\] {
+  min-height: 399px;
 }
 
 .w-\[195px\] {
@@ -952,6 +968,18 @@ body {
 
 .w-\[50\%\] {
   width: 50%;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-\[60\%\] {
+  width: 60%;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .min-w-\[600px\] {
@@ -1130,6 +1158,12 @@ body {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -2131,8 +2165,17 @@ body {
     margin-right: 3.5rem;
   }
 
+  .xl\:min-h-\[375px\] {
+    min-height: 375px;
+  }
+
   .xl\:max-w-3xl {
     max-width: 48rem;
+  }
+
+  .xl\:translate-y-\[20\%\] {
+    --tw-translate-y: 20%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .xl\:space-x-8 > :not([hidden]) ~ :not([hidden]) {
@@ -2180,6 +2223,10 @@ body {
 }
 
 @media (min-width: 1536px) {
+  .\32xl\:min-h-\[453px\] {
+    min-height: 453px;
+  }
+
   .\32xl\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
