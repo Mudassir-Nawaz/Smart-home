@@ -1697,6 +1697,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
