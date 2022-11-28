@@ -170,3 +170,14 @@ setInterval(() => {
     
   }
 }, 100);
+
+setInterval(() => {
+  
+  let mouse = document.querySelector('.mousey');
+  if(documentBody.classList.toString().includes('fp-viewing-eight')){
+    mouse.style.backgroundColor = "#50489B"
+  }else{
+    mouse.style.backgroundColor = "transparent"
+
+  }
+}, 1000);
