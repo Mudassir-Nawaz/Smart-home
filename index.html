@@ -24,7 +24,7 @@
 
     <style>
       .swiper {
-        width: 100%;
+        width: 80%;
         height: 100%;
       }
 
@@ -54,6 +54,29 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+      .swiper-button-next {
+        /* margin: 100px; */
+        background-image: url('./assets/images/profile-big.png'); 
+        background-size: cover; 
+        background-position: center; 
+        padding: 0 30px !important; 
+        color: #fff; 
+        margin: -22px -39px !important;
+        z-index: 1000; 
+        position: absolute !important; 
+        top: 22% !important;
+      }
+      .swiper-button-prev {
+        background-image: url('./assets/images/profile-big.png'); 
+        background-size: cover; 
+        background-position: center; 
+        padding: 0 30px !important; 
+        color: #fff; 
+        margin: -22px -39px !important;
+        z-index: 100; 
+        position: absolute !important; 
+        top: 22% !important;
       }
       @media (max-width:768px) {
         .small-hide {
@@ -232,22 +255,24 @@
           <h1 class="text-center text-3xl md:text-4xl lg:text-5xl mb-16 md:my-24 text-white block md:hidden">What Clients Say About US!!</h1>
 
           <!-- new carousel -->
-          <div class="mx-4 pt-12 xl:px-8 2xl:pl-40">
+          <div class="mx-4 pt-12 xl:px-8 2xl:pl-40 z-50">
             <h1 class="text-darkPurple text-xl lg:text-2xl">Customers</h1>
             <p class="text-grayAccent text-lg lg:text-xl">Stories</p>
           </div>
-          <div class="swiper mySwiper-2 hidden md:block py-16 relative" style="padding: 5em 0 !important;">
+          <div class="swiper mySwiper-2 hidden md:block py-16 relative mx-auto" style="padding: 5em 0 !important;">
+            <div class="swiper-button-next min-h-[320px]"></div>
+            <div class="swiper-button-prev min-h-[320px]"></div>
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="flex mx-4 h-80 shadow-lg">
                   <div class="w-[20%] h-80 ">
                     <img src="./assets/images/profile-big.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
                   </div>
-                  <div class="bg-[#e0e0e0] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80  rounded-tr-lg rounded-br-lg">
+                  <div class="bg-[#fafafa] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80 shadow-xl">
                     <svg class="mb-2 inline py-10"  viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.09705 9.17704C9.54567 9.17704 10.9617 9.6066 12.1662 10.4114C13.3707 11.2162 14.3095 12.3601 14.8638 13.6985C15.4182 15.0368 15.5632 16.5095 15.2806 17.9303C14.998 19.351 14.3004 20.6561 13.2761 21.6804C12.2518 22.7047 10.9467 23.4023 9.52596 23.6849C8.10518 23.9675 6.6325 23.8225 5.29416 23.2681C3.95582 22.7138 2.81192 21.775 2.00711 20.5705C1.2023 19.366 0.77274 17.95 0.77274 16.5014L0.739258 15.455C0.739258 11.57 2.28259 7.84403 5.02974 5.09688C7.77689 2.34973 11.5028 0.806396 15.3879 0.806396V4.99172C14.0132 4.98802 12.6515 5.25688 11.3813 5.78274C10.1112 6.3086 8.95797 7.08103 7.98824 8.05537C7.61134 8.43156 7.26365 8.83592 6.94818 9.26493C7.32277 9.20634 7.70573 9.17495 8.09496 9.17495L8.09705 9.17704ZM26.931 9.17704C28.3796 9.17704 29.7957 9.6066 31.0002 10.4114C32.2046 11.2162 33.1434 12.3601 33.6978 13.6985C34.2521 15.0368 34.3972 16.5095 34.1146 17.9303C33.832 19.351 33.1344 20.6561 32.1101 21.6804C31.0857 22.7047 29.7807 23.4023 28.3599 23.6849C26.9391 23.9675 25.4665 23.8225 24.1281 23.2681C22.7898 22.7138 21.6459 21.775 20.8411 20.5705C20.0363 19.366 19.6067 17.95 19.6067 16.5014L19.5732 15.455C19.5732 11.57 21.1165 7.84403 23.8637 5.09688C26.6108 2.34973 30.3368 0.806396 34.2218 0.806396V4.99172C32.8472 4.98802 31.4854 5.25688 30.2153 5.78274C28.9452 6.3086 27.7919 7.08103 26.8222 8.05537C26.4453 8.43156 26.0976 8.83592 25.7821 9.26493C26.1567 9.20634 26.5397 9.17495 26.931 9.17495V9.17704Z" fill="#4B439D" fill-opacity="1"/>
                     </svg>
-                    <p class="text-base text-start text-[#6b6b6b] mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
+                    <p class="text-2xl text-start text-[#6b6b6b] mb-4 w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
                     <h3 class="text-prupleAccent text-xl bgpr">Nike Wander</h3>
                     <h6 class="text-[#9b9b9b] mb-2">Backend</h6>
                   </div>
@@ -258,11 +283,11 @@
                   <div class="w-[20%] h-80 ">
                     <img src="./assets/images/profile-big.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
                   </div>
-                  <div class="bg-[#e0e0e0] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80  rounded-tr-lg rounded-br-lg">
+                  <div class="bg-[#fafafa] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80 shadow-xl">
                     <svg class="mb-2 inline py-10"  viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.09705 9.17704C9.54567 9.17704 10.9617 9.6066 12.1662 10.4114C13.3707 11.2162 14.3095 12.3601 14.8638 13.6985C15.4182 15.0368 15.5632 16.5095 15.2806 17.9303C14.998 19.351 14.3004 20.6561 13.2761 21.6804C12.2518 22.7047 10.9467 23.4023 9.52596 23.6849C8.10518 23.9675 6.6325 23.8225 5.29416 23.2681C3.95582 22.7138 2.81192 21.775 2.00711 20.5705C1.2023 19.366 0.77274 17.95 0.77274 16.5014L0.739258 15.455C0.739258 11.57 2.28259 7.84403 5.02974 5.09688C7.77689 2.34973 11.5028 0.806396 15.3879 0.806396V4.99172C14.0132 4.98802 12.6515 5.25688 11.3813 5.78274C10.1112 6.3086 8.95797 7.08103 7.98824 8.05537C7.61134 8.43156 7.26365 8.83592 6.94818 9.26493C7.32277 9.20634 7.70573 9.17495 8.09496 9.17495L8.09705 9.17704ZM26.931 9.17704C28.3796 9.17704 29.7957 9.6066 31.0002 10.4114C32.2046 11.2162 33.1434 12.3601 33.6978 13.6985C34.2521 15.0368 34.3972 16.5095 34.1146 17.9303C33.832 19.351 33.1344 20.6561 32.1101 21.6804C31.0857 22.7047 29.7807 23.4023 28.3599 23.6849C26.9391 23.9675 25.4665 23.8225 24.1281 23.2681C22.7898 22.7138 21.6459 21.775 20.8411 20.5705C20.0363 19.366 19.6067 17.95 19.6067 16.5014L19.5732 15.455C19.5732 11.57 21.1165 7.84403 23.8637 5.09688C26.6108 2.34973 30.3368 0.806396 34.2218 0.806396V4.99172C32.8472 4.98802 31.4854 5.25688 30.2153 5.78274C28.9452 6.3086 27.7919 7.08103 26.8222 8.05537C26.4453 8.43156 26.0976 8.83592 25.7821 9.26493C26.1567 9.20634 26.5397 9.17495 26.931 9.17495V9.17704Z" fill="#4B439D" fill-opacity="1"/>
                     </svg>
-                    <p class="text-base text-start text-[#6b6b6b] mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
+                    <p class="text-2xl text-start text-[#6b6b6b] mb-4 w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
                     <h3 class="text-prupleAccent text-xl bgpr">Nike Wander</h3>
                     <h6 class="text-[#9b9b9b] mb-2">Backend</h6>
                   </div>
@@ -273,19 +298,17 @@
                   <div class="w-[20%] h-80 ">
                     <img src="./assets/images/profile-big.png" alt="" class="w-full h-full object-cover aspect-auto rounded-tl-lg rounded-bl-lg">
                   </div>
-                  <div class="bg-[#e0e0e0] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80  rounded-tr-lg rounded-br-lg">
+                  <div class="bg-[#fafafa] pl-3 pr-1 flex flex-col justify-center items-start w-[80%] h-80 shadow-xl">
                     <svg class="mb-2 inline py-10"  viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.09705 9.17704C9.54567 9.17704 10.9617 9.6066 12.1662 10.4114C13.3707 11.2162 14.3095 12.3601 14.8638 13.6985C15.4182 15.0368 15.5632 16.5095 15.2806 17.9303C14.998 19.351 14.3004 20.6561 13.2761 21.6804C12.2518 22.7047 10.9467 23.4023 9.52596 23.6849C8.10518 23.9675 6.6325 23.8225 5.29416 23.2681C3.95582 22.7138 2.81192 21.775 2.00711 20.5705C1.2023 19.366 0.77274 17.95 0.77274 16.5014L0.739258 15.455C0.739258 11.57 2.28259 7.84403 5.02974 5.09688C7.77689 2.34973 11.5028 0.806396 15.3879 0.806396V4.99172C14.0132 4.98802 12.6515 5.25688 11.3813 5.78274C10.1112 6.3086 8.95797 7.08103 7.98824 8.05537C7.61134 8.43156 7.26365 8.83592 6.94818 9.26493C7.32277 9.20634 7.70573 9.17495 8.09496 9.17495L8.09705 9.17704ZM26.931 9.17704C28.3796 9.17704 29.7957 9.6066 31.0002 10.4114C32.2046 11.2162 33.1434 12.3601 33.6978 13.6985C34.2521 15.0368 34.3972 16.5095 34.1146 17.9303C33.832 19.351 33.1344 20.6561 32.1101 21.6804C31.0857 22.7047 29.7807 23.4023 28.3599 23.6849C26.9391 23.9675 25.4665 23.8225 24.1281 23.2681C22.7898 22.7138 21.6459 21.775 20.8411 20.5705C20.0363 19.366 19.6067 17.95 19.6067 16.5014L19.5732 15.455C19.5732 11.57 21.1165 7.84403 23.8637 5.09688C26.6108 2.34973 30.3368 0.806396 34.2218 0.806396V4.99172C32.8472 4.98802 31.4854 5.25688 30.2153 5.78274C28.9452 6.3086 27.7919 7.08103 26.8222 8.05537C26.4453 8.43156 26.0976 8.83592 25.7821 9.26493C26.1567 9.20634 26.5397 9.17495 26.931 9.17495V9.17704Z" fill="#4B439D" fill-opacity="1"/>
                     </svg>
-                    <p class="text-base text-start text-[#6b6b6b] mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
+                    <p class="text-2xl text-start text-[#6b6b6b] mb-4 w-[70%]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta architecto dolores saepe sint itaque eum deserunt error?</p>  
                     <h3 class="text-prupleAccent text-xl bgpr">Nike Wander</h3>
                     <h6 class="text-[#9b9b9b] mb-2">Backend</h6>
                   </div>
                 </div>
               </div>
             </div>
-            <div style="color: #4C449D; z-index: 100;" class="swiper-button-next"></div>
-            <div style="color: #4C449D; z-index: 100;" class="swiper-button-prev"></div>
           </div>
           <!-- end new carousel -->
 
