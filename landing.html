@@ -177,14 +177,19 @@ span {
 </head>
 <body class="relative">
     <!-- Navbar for large screens -->
-    <header class="text-whiteAccent body-font  py-4 absolute w-full bg-transparent z-50">
-        <div class="flex justify-between items-center md:px-4 py-2 px-8"  id="navbar">
-            <a href="#" class="text-left cursor-pointer z-[1000] flex title-font font-medium items-center  md:mb-0 ">
-              <p class=" text-xl" id="logoHolder"></p>
-            </a>
+    <header class=" mx-auto text-whiteAccent body-font  py-4 absolute w-full bg-transparent z-50">
+        <div id="navbar">
+
+            <div class="flex justify-between items-center md:px-4 py-2 px-8 container mx-auto"  >
+                <a href="#" class="text-left cursor-pointer z-[1000] flex title-font font-medium items-center  md:mb-0 ">
+                    <!-- logo here -->
+                    <p class="md:block hidden" id="logo">LOGOHERE</p>  
+                    <!-- for mobile -->
+                    <p class="text-xl md:hidden block" id="logoHolder"></p>
+                </a>
             <div class="container mx-auto justify-center p-5 items-center hidden md:flex">
               <nav id="menuPc" class="flex flex-wrap items-center text-base justify-center md:space-x-4 lg:space-x-6 xl:space-x-8 links">
-                <a href="#firstPage" class="text-base font-[500] focus:font-semibold">Home</a>
+                  <a href="#firstPage" class="text-base font-[500] focus:font-semibold">Home</a>
                 <a href="#second" class="text-base font-[500] focus:font-semibold">Features</a>
                 <a href="#sixth" class="text-base font-[500] focus:font-semibold">Testimonials</a>
                 <a href="#eight" class="text-base font-[500] focus:font-semibold">Pricing</a>
@@ -197,6 +202,7 @@ span {
               <i id="menubar-icon" class="fa-light fas fa-bars text-xl"></i>
             </div>
         </div>
+    </div>
     </header>
     <!-- End -->
       <!-- Mobile Menu -->
@@ -341,38 +347,39 @@ span {
             <div class="container mx-auto z-20 items-center md:mb-12">
                 <div class="h-[100vh] flex flex-col justify-center">
                     <!-- Mobile Version -->
-                    <div class="md:hidden block mb-12 md:mb-4" id="testimonials">
-                        <div class="flex flex-col justify-center gap-y-8">
-                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                    <div class="md:hidden block">
+                        <div class="flex flex-col items-center justify-center gap-y-3 sm:gap-y-8">
+                            <div class="max-w-[90%] mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
                                 <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
                                 <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
-                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
-                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                                <p class="text-[#4F4D65] text-[16px] text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-[16px] text-center font-semibold">Joony Siverhand</p>
                             </div>
-                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                            <div class="max-w-[90%] mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
                                 <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
                                 <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
-                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
-                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                                <p class="text-[#4F4D65] text-[16px] text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-[16px] text-center font-semibold">Joony Siverhand</p>
                             </div>
-                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                            <div class="max-w-[90%] mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
                                 <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
                                 <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
-                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
-                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                                <p class="text-[#4F4D65] text-[16px] text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-[16px] text-center font-semibold">Joony Siverhand</p>
                             </div>
-                            <div class="max-w-[90%] min-h-32 max-h-52 mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                            <div class="max-w-[90%] mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
                                 <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
                                 <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
-                                <p class="text-[#4F4D65] text-lg text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
-                                <p class="text-prupleAccent text-lg text-center font-semibold">Joony Siverhand</p>
+                                <p class="text-[#4F4D65] text-[16px] text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
+                                <p class="text-prupleAccent text-[16px] text-center font-semibold">Joony Siverhand</p>
                             </div>
                         </div>
                     </div>
                     <!-- For Large Screens -->
                     <div class="hidden md:block">
                         <div class="container mx-auto">
-                            <div class="bg-white max-w-7xl mx-auto min-w-[600px] px-8 py-8 lg:py-14 xl:py-16 rounded-xl flex justify-around">
+                            <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-[65px] font-bold xl:leading-none text-whiteAccent max-w-7xl mb-6 hidden md:block">Testimonials</h1>
+                            <div class="bg-white  mx-auto min-w-[600px] px-8 py-8 lg:py-14 xl:py-16 rounded-xl flex justify-around">
                                 <div class="w-1/2 flex flex-col justify-center">
                                     <div class="cursor-pointer rounded-md flex items-center gap-x-4 py-4 px-2  hover:bg-[#4A41B2] group name1">
                                         <img src="./assets/images/landing-page/pc-profile.png" alt="">
@@ -928,86 +935,97 @@ span {
         </section>
         <!-- section ends -->
         <!-- Section Start -->
-        <section class="section section-custom items-end">
-            <div class="container mx-auto flex flex-col justify-between min-h-screen">
-                <div class="grid grid-cols-1 gap-x-2 gap-y-4 lg:grid-cols-2 px-4 mt-24 md:mt-40 lg:mt-52">
-                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
-                        <img src="./assets/images/landing-page/brackets-hand.png" alt="">
-                        <div>
-                            <h1 class="text-[#201E8B] text-base font-semibold">Fast placehold Message</h1>
-                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <section class="section section-custom items-end relative">
+            <div class="container mx-auto absolute -top-8 sm:top-0 md:relative flex flex-col justify-end items-center ">
+                <div>
+
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-[65px] font-bold xl:leading-none text-whiteAccent max-w-7xl mb-6 hidden md:block self-baseline">Why Choose Us</h1>
+                
+                    <div>
+                        <div class="grid grid-cols-1 gap-x-2 md:gap-x-4 md:gap-y-6 lg:gap-x-8 lg:gap-y-10 gap-y-4 lg:grid-cols-2 px-4 mt-24 md:mt-40 lg:mt-52">
+                        <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                            <img src="./assets/images/landing-page/brackets-hand.png" alt="">
+                            <div>
+                                <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Fast placehold Message</h1>
+                                <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                            <img src="./assets/images/landing-page/support.png" alt="">
+                            <div>
+                                <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Maintained 24/7</h1>
+                                <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                            <div>
+                                <img src="./assets/images/landing-page/features.png" class="" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Top Features</h1>
+                                <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                            <div class="flex items-center justify-center">
+                                <img src="./assets/images/landing-page/ease.png" class="" alt="">
+                            </div>
+                            <div>
+                                <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Easy to use</h1>
+                                <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
                         </div>
                     </div>
-                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
-                        <img src="./assets/images/landing-page/support.png" alt="">
-                        <div>
-                            <h1 class="text-[#201E8B] text-base font-semibold">Maintained 24/7</h1>
-                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
-                        <div>
-                            <img src="./assets/images/landing-page/features.png" class="w-[70%]" alt="">
-                        </div>
-                        <div>
-                            <h1 class="text-[#201E8B] text-base font-semibold">Top Features</h1>
-                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                    <div class="flex bg-white px-6 py-3 rounded-md gap-x-4">
-                        <div class="flex items-center justify-center">
-                            <img src="./assets/images/landing-page/ease.png" class="w-[70%]" alt="">
-                        </div>
-                        <div>
-                            <h1 class="text-[#201E8B] text-base font-semibold">Easy to use</h1>
-                            <p class="text-[#5856A7] text-xs">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </div>
-                </div>
-                <footer class="mb-12 md:my-20 mt-16 md:mt-24">
+                <footer class="mb-12 md:my-20 sm:mt-16 md:mt-24 mt-4 ">
+                    <hr class="w-[90%] mx-auto z-50">
                     <div class="container mx-auto">
-                      <div class="flex flex-col md:flex-row items-center text-white justify-center gap-8 md:space-x-16">
-                        <div class="flex gap-x-8 gap-y-4">
-                            <div>
-                              <h1 class="text-xl mb-3 font-semibold">Usefull Links</h1>
-                              <div class="space-y-2">
-                                <a class="block" href="#">Privat Policy</a>
-                                <a class="block" href="#">Terms and conditions</a>
-                                <a class="block" href="#">Disclamer</a>
-                                <a class="block" href="#">Support</a>
-                                <a class="block" href="#">FAQ</a>
-                              </div>
-                            </div>
-                            <div>
-                              <h1 class="text-xl mb-3 font-semibold">Company</h1>
-                              <div class="space-y-2">
-                                <a class="block" href="#">About Us</a>
-                                <a class="block" href="#">Blog</a>
-                                <a class="block" href="#">Services</a>
-                                <a class="block" href="#">Pricing</a>
-                                <a class="block" href="#">Partnership</a>
-                              </div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="text-white text-xl text-center md:text-start mb-12 md:mb-4">
+                        <div class="flex flex-col md:flex-row items-center text-white justify-center sm:gap-8 gap-2 md:space-x-16">
+                            <div class="flex gap-x-8 sm:gap-y-4">
                                 <div>
-                                  <i class="fa-solid fa-envelope text-2xl mr-2"></i><a class="" href="mailto:mailhere@gmail.com">mailhere@gmail.com</a>
+                                    <h1 class="text-xl sm:mb-3 font-semibold">Usefull Links</h1>
+                                    <div class="md:space-y-2">
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Privat Policy</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Terms and conditions</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Disclamer</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Support</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">FAQ</a>
+                                    </div>
                                 </div>
                                 <div>
-                                  <i class="fa-solid fas fa-phone text-2xl mr-2 "></i><a class="" href="tel:0045 26 71 99 53">0045 26 71 99 53</a>
+                                    <h1 class="text-xl sm:mb-3 font-semibold">Company</h1>
+                                    <div class="md:space-y-2">
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">About Us</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Blog</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Services</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Pricing</a>
+                                        <a class="text-xs sm:text-sm md:text-base block" href="#">Partnership</a>
+                                    </div>
                                 </div>
-                                <div class="my-8">
-                                  <i class="text-3xl mx-2 fa-brands fab fa-instagram"></i>
-                                  <i class="text-3xl mx-2 fa-brands fab fab fa-whatsapp"></i>
-                                  <i class="text-3xl mx-2 fa-brands fab fab fab fa-twitter"></i>
-                                  <i class="text-3xl mx-2 fa-brands fab fab fa-youtube"></i>
+                            </div>
+                            <div>
+                                <div class="text-white text-xl text-center md:text-start mb-0 sm:mb-12 md:mb-4">
+                                    <div>
+                                        <i class="fa-solid fa-envelope text-sm sm:text-xl md:text-2xl mr-2"></i><a class="" href="mailto:mailhere@gmail.com">mailhere@gmail.com</a>
+                                    </div>
+                                    <div>
+                                        <i class="fa-solid fas fa-phone text-sm sm:text-xl md:text-2xl mr-2 "></i><a class="" href="tel:0045 26 71 99 53">0045 26 71 99 53</a>
+                                    </div>
+                                    <div class="sm:my-8">
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl mx-2 fa-brands fab fa-instagram"></i>
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl mx-2 fa-brands fab fab fa-whatsapp"></i>
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl mx-2 fa-brands fab fab fab fa-twitter"></i>
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl mx-2 fa-brands fab fab fa-youtube"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                      </div>
+                    </div>
+                    <div class="text-center sm:text-xl md:text-2xl mx-5 text-xs text-white sm:mt-8 sm:mb-8">
+                        Copyright © 2021 all rights reserved smartHome
                     </div>
                 </footer>
+            </div>
             </div>
         </section>
         <!-- section ends -->

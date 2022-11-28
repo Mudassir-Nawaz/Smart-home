@@ -123,13 +123,13 @@ const navbarL = document.querySelector('#navbar')
 const links = document.querySelector('.links')
 const button = document.querySelector('#button')
 let linksChild = Array.from(links.children)
-
+const logo = document.querySelector('#logo')
 
 setInterval(() => {
   if (window.innerWidth >= 768) {
     if(documentBody.classList.toString().includes('fp-viewing-firstPage')){
-      holder.classList.remove('text-prupleAccent')
-      holder.classList.add('text-white')
+      logo.classList.remove('text-prupleAccent')
+      logo.classList.add('text-white')
       linksChild.forEach(child => {
         child.classList.remove('text-prupleAccent')
       });
@@ -145,7 +145,7 @@ setInterval(() => {
       button.classList.remove('text-whiteAccent')
     }else{
       navbarL.classList.add('bg-white')
-      holder.classList.add('text-prupleAccent')
+      logo.classList.add('text-prupleAccent')
       linksChild.forEach(child => {
         child.classList.add('text-prupleAccent')
       });
@@ -157,6 +157,9 @@ setInterval(() => {
   
   
     }  
+  }else{
+    navbarL.classList.remove('bg-white');
+    navbarL.classList.add('bg-transparent');
   }
 }, 100);
 
@@ -178,6 +181,16 @@ setInterval(() => {
     mouse.style.backgroundColor = "#50489B"
   }else{
     mouse.style.backgroundColor = "transparent"
+
+  }
+}, 1000);
+setInterval(() => {
+  
+  let mouse = document.querySelector('.mousey');
+  if(documentBody.classList.toString().includes('fp-viewing-nine')){
+    mouse.style.display = "none"
+  }else{
+    mouse.style.display = "block"
 
   }
 }, 1000);
