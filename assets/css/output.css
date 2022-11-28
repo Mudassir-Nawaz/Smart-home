@@ -1368,6 +1368,10 @@ body {
   padding-top: 3.5rem;
 }
 
+.pt-12 {
+  padding-top: 3rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1398,10 +1402,6 @@ body {
 
 .pl-2 {
   padding-left: 0.5rem;
-}
-
-.pt-12 {
-  padding-top: 3rem;
 }
 
 .text-left {
@@ -1448,6 +1448,11 @@ body {
   line-height: 2.25rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1465,11 +1470,6 @@ body {
 
 .text-\[18px\] {
   font-size: 18px;
-}
-
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
 }
 
 .font-semibold {
@@ -1527,6 +1527,16 @@ body {
 .text-prupleAccent {
   --tw-text-opacity: 1;
   color: rgb(75 67 157 / var(--tw-text-opacity));
+}
+
+.text-darkPurple {
+  --tw-text-opacity: 1;
+  color: rgb(80 72 155 / var(--tw-text-opacity));
+}
+
+.text-grayAccent {
+  --tw-text-opacity: 1;
+  color: rgb(107 107 107 / var(--tw-text-opacity));
 }
 
 .text-\[\#6b6b6b\] {
@@ -2044,6 +2054,11 @@ body {
     line-height: 1;
   }
 
+  .lg\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
   .lg\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
@@ -2061,6 +2076,11 @@ body {
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
+  .xl\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
   .xl\:text-\[72px\] {
     font-size: 72px;
   }
@@ -2076,5 +2096,11 @@ body {
 
   .xl\:leading-none {
     line-height: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:pl-40 {
+    padding-left: 10rem;
   }
 }
