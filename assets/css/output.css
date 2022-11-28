@@ -882,6 +882,19 @@ body {
   max-height: 0px;
 }
 
+.max-h-min {
+  max-height: -moz-min-content;
+  max-height: min-content;
+}
+
+.max-h-\[80\%\] {
+  max-height: 80%;
+}
+
+.max-h-\[70\%\] {
+  max-height: 70%;
+}
+
 .min-h-\[40vw\] {
   min-height: 40vw;
 }
@@ -1036,6 +1049,10 @@ body {
   align-items: center;
 }
 
+.items-baseline {
+  align-items: baseline;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1126,6 +1143,10 @@ body {
 
 .overflow-x-hidden {
   overflow-x: hidden;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
 }
 
 .overflow-x-clip {
@@ -1741,6 +1762,10 @@ body {
 
   .md\:mt-24 {
     margin-top: 6rem;
+  }
+
+  .md\:mb-12 {
+    margin-bottom: 3rem;
   }
 
   .md\:block {
