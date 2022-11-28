@@ -886,6 +886,10 @@ body {
   max-height: 0px;
 }
 
+.max-h-\[90\%\] {
+  max-height: 90%;
+}
+
 .min-h-\[320px\] {
   min-height: 320px;
 }
@@ -1809,6 +1813,10 @@ body {
 
   .md\:max-w-lg {
     max-width: 32rem;
+  }
+
+  .md\:flex-none {
+    flex: none;
   }
 
   .md\:flex-row {
