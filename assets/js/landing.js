@@ -194,3 +194,12 @@ setInterval(() => {
 
   }
 }, 1000);
+
+
+// window.addEventListener('DOMContentLoaded', function() {
+//   if(screen.availHeight > screen.availWidth){
+//     const snapScroll = document.querySelector('#fullPage');
+//     console.log('hi')
+//     snapScroll.remove();
+//   }
+// })
