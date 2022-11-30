@@ -234,7 +234,7 @@ const prices = document.querySelectorAll('.prices')
 monthly.addEventListener('click', ()=> {
 
   for (let i = 0; i < prices.length; i++) {
-    prices[i].innerHTML = "$0/mo"
+    prices[i].innerHTML = '<span class="inline text-4xl font-semibold">$0</span>/mo'
   }
   monthly.classList.remove('bg-white')
   monthly.classList.add('bg-transparent')
@@ -250,7 +250,7 @@ monthly.addEventListener('click', ()=> {
 yearly.addEventListener('click', ()=> {
 
   for (let i = 0; i < prices.length; i++) {
-    prices[i].innerHTML = "$0/year"
+    prices[i].innerHTML = '<span class="inline text-4xl font-semibold">$0</span>/year'
   }
   yearly.classList.add('bg-transparent')
   yearly.classList.remove('bg-white')
