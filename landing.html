@@ -65,8 +65,8 @@
 
 
 .swiper-container {
-  width: 450px !important;
-  margin: 0 auto !important;
+  width: 250px !important;
+  /* margin: 0 auto !important; */
   height: 100%;
 }
 .swiper-wrapper {
@@ -79,7 +79,7 @@
 }
 .swiper-slide {
   width: 100% !important;
-  margin: 0 auto !important;
+  margin-left: auto !important;
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -105,18 +105,22 @@
   width: auto !important;
   left: auto !important;
   margin: 0;
+  background: #fff;
+  color: #4B41B1;
+  padding: 0 !important;
+  border-radius: 2px;
 }
 .swiper-pagination-bullet {
-  padding: 5px 10px;
-  margin: 0;
-  border-radius: 4px;
+  padding: 5px 10px !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
   width: auto;
   height: 30px;
   text-align: center;
   /*line-height: 30px;*/
   opacity: 0.7;
   font-size: 12px;
-  color:#9F96FF;
+  color: #4B41B1;
   background: #fff;
 }
 .swiper-pagination-bullet-active {
@@ -124,7 +128,7 @@
   /*gap: 0px !important;*/
   /* margin-top: -10px; */
   color:#fff;
-  background-color: #4B41B1 !important;
+  background-color:  hsla(245, 46%, 47%, 1) !important;
 }
 
 .scroll-downs {
@@ -235,7 +239,7 @@ span {
                         </div>
                     </div>
                     <div class="mx-auto md:mx-0 md:w-[50%] mt-8 md:mt-0 flex md:justify-end md:items-end">
-                        <img src="./assets/images/landing-page/hero-image.png" alt="" class="max-w-[400px] md:max-w-full ">
+                        <img src="./assets/images/landing-page/hero-image.png" alt="" class="max-w-full md:max-w-full">
                     </div>
                 </div>
             </div>
@@ -340,8 +344,8 @@ span {
         </section>
         <!-- section ends -->
         <!-- Testimonials Start -->
-        <section class="section section-custom overflow-y-hidden" id="testimonials" >
-            <div class="bg-whiteSecond w-96 h-[85%] absolute rounded-md top-0 left-[75%] block md:hidden">
+        <section class="section section-custom overflow-x-clip" id="testimonials" >
+            <div class="bg-whiteSecond w-56 h-[85%] absolute rounded-md top-0 left-[75%] block md:hidden ">
             <img src="./assets/images/landing-page/string-sv.svg" alt="" class="absolute z-10 top-0 left-0 md:hidden block">
             </div>
             <div class="container mx-auto z-20 items-center md:mb-12">
@@ -349,7 +353,7 @@ span {
                     <!-- Mobile Version -->
                     <div class="md:hidden block">
                         <div class="flex flex-col items-center justify-center gap-y-3 sm:gap-y-8">
-                            <div class="max-w-[90%] mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4">
+                            <div class="max-w-[90%] mr-6 ml-10  bg-white rounded-2xl shadow-lg relative py-6 pl-10 pr-4 ">
                                 <img src="./assets/images/landing-page/quote.png" class="absolute top-2 right-4 " alt="">
                                 <img src="./assets/images/landing-page/testimonial.png" class="absolute -left-7 top-1/2 -translate-y-2/4" alt="">
                                 <p class="text-[#4F4D65] text-[16px] text-center">“The holde is amaizimg it helped me alot and made my life easy”</p>
@@ -489,12 +493,12 @@ span {
                     <div class="w-full md:w-[50%] h-full flex items-center justify-center md:justify-start mx-auto px-4">
                         <div class="max-w-xl">
                             <div class="text-[#313131] rounded-md mx-auto "> 
-                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
+                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left" id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
                                 <div class="pb-4 -mt-2 pt-4 rounded-b-md w-full max-h-0 transition-all duration-200 hidden overflow-hidden bg-white px-8" id="faq-answer">
                                     <p class="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
                                 </div>
-                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
-                                <div class="pb-4 -mt-2 pt-4 rounded-b-md w-full max-h-0 transition-all duration-200 hidden overflow-hidden bg-white px-8" id="faq-answer">
+                                <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left secondQ2" id="faq-q"><i class="fas fa-minus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
+                                <div style="display: block;" class="pb-4 -mt-2 pt-4 rounded-b-md w-full  transition-all duration-200 overflow-hidden bg-white px-8" id="faq-answer">
                                     <p class="text-sm mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi consequuntur repellat ullam quidem perspiciatis.</p>
                                 </div>
                                 <button class="mt-5 bg-white hover:bg-whiteSecond transition-all duration-500 px-8 py-4 rounded-md cursor-pointer min-w-full text-[#313131] border-none outline-none text-left " id="faq-q"><i class="fas fa-plus text-xl mr-4"></i>Cha5ber reached do he notging be?</button>
@@ -515,10 +519,10 @@ span {
         <!-- Section Start -->
         <section class="section section-custom">
             <div class="min-h-screen flex justify-center items-center">
-                <div class="">
-                    <div class="text-center mb-4 md:mb-12">
-                        <button class="py-1 px-10 text-white rounded-md border-white border md:text-xl 2xl:text-2xl">Monthly</button>
-                        <button class="ml-4 py-1 px-10 bg-white text-prupleAccent rounded-md border-white border md:text-xl 2xl:text-2xl">Yearly</button>
+                <div class="flex flex-col-reverse md:flex-col">
+                    <div class="text-center mb-0 mt-12 md:mt-0 md:mb-12">
+                        <button class="py-1 px-10 text-white rounded-md border-white border md:text-xl 2xl:text-2xl transition-all duration-300" id="monthly">Monthly</button>
+                        <button class="ml-4 py-1 px-10 bg-white text-prupleAccent rounded-md border-white border md:text-xl 2xl:text-2xl transition-all duration-300" id="yearly">Yearly</button>
                     </div>
                     <!-- Mobile -->
                     <div class="flex md:hidden">
@@ -528,13 +532,11 @@ span {
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <div class="w-[70%] bg-transparent">
-                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
-                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl">Free</h1>
+                                    <div class="w-[100%] mx-auto" style="justify-content: start !important;">
+                                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner rounded-md">
+                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl pt-3">Free</h1>
                                             <p class="pt-2 tracking-wide">
-                                                <p class="inline align-top">$ </p>
-                                                <p class="inline text-4xl font-semibold">0</p>
-                                                <p class="inline font-medium">/ mo</p>
+                                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                                             </p>
                                             <div class="mt-16 mx-8 py-4">
                                                 <p class="font-semibold text-left">
@@ -561,19 +563,17 @@ span {
                                                     </p>
                                                     <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
                                                 </p>
-                        
+                                                <button class="bg-transparent text-prupleAccent px-6 py-[2px] border border-prupleAccent rounded-[2px] mt-4">Buy Now</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="w-[70%] bg-transparent">
-                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
-                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl">Basic</h1>
+                                    <div class="w-[100%] mx-auto">
+                                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner rounded-md">
+                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl pt-3">Basic</h1>
                                             <p class="pt-2 tracking-wide">
-                                                <p class="inline align-top">$ </p>
-                                                <p class="inline text-4xl font-semibold">0</p>
-                                                <p class="inline font-medium">/ mo</p>
+                                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                                             </p>
                                             <div class="mt-16 mx-8 py-4">
                                                 <p class="font-semibold text-left">
@@ -606,20 +606,18 @@ span {
                                                     </p>
                                                     <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
                                                 </p>
-                        
+                                                <button class="bg-transparent text-prupleAccent px-6 py-[2px] border border-prupleAccent rounded-[2px] mt-4">Buy Now</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="w-[70%] bg-transparent">
-                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner relative">
+                                    <div class="w-[100%] mx-auto">
+                                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner rounded-md relative">
                                             <p class="bg-prupleAccent text-white py-1 px-8 mb-4 absolute -right-4 top-8 rotate-45">Recomended</p>
-                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl">Plus</h1>
+                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl pt-3">Plus</h1>
                                             <p class="pt-2 tracking-wide">
-                                                <p class="inline align-top">$ </p>
-                                                <p class="inline text-4xl font-semibold">0</p>
-                                                <p class="inline font-medium">/ mo</p>
+                                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                                             </p>
                                             <div class="mt-16 mx-8 py-4">
                                                 <p class="font-semibold text-left">
@@ -658,19 +656,17 @@ span {
                                                     </p>
                                                     <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
                                                 </p>
-                        
+                                                <button class="bg-transparent text-prupleAccent px-6 py-[2px] border border-prupleAccent rounded-[2px] mt-4">Buy Now</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="swiper-slide">
-                                    <div class="w-[70%] bg-transparent">
-                                        <div class="border-black border lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner">
-                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl">Pro</h1>
+                                    <div class="w-[100%] mx-auto">
+                                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-16 md:pr-8 shadow-inner rounded-md">
+                                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl pt-3">Pro</h1>
                                             <p class="pt-2 tracking-wide">
-                                                <p class="inline align-top">$ </p>
-                                                <p class="inline text-4xl font-semibold">0</p>
-                                                <p class="inline font-medium">/ mo</p>
+                                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                                             </p>
                                             <div class="mt-16 mx-8 py-4">
                                                 <p class="font-semibold text-left">
@@ -715,7 +711,7 @@ span {
                                                     </p>
                                                     <p class="inline pl-2 text-[#5B5B5B]">Placeholder</p>
                                                 </p>
-                        
+                                                <button class="bg-transparent text-prupleAccent px-6 py-[2px] border border-prupleAccent rounded-[2px] mt-4">Buy Now</button>
                                             </div>
                                         </div>
                                     </div>
@@ -729,201 +725,197 @@ span {
                     <!-- Large Screens -->
                     <div class="pt-12 md:flex mx-8 hidden">
                         <!-- Free Card -->
-                        <div class="lg:p-8 md:p-4 bg-white text-center lg:pr-12 md:pr-8 shadow-inner">
-                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl lg:text-3xl xl:text-4xl 2xl:5xl">Free</h1>
+                        <div class="lg:p-8 md:p-4 bg-white text-center lg:pr-12 md:pr-8 " style="box-shadow: -8px 1px 0px -2px rgba(0,0,0,0.19) inset;
+-webkit-box-shadow: -8px 1px 0px -2px rgba(0,0,0,0.19) inset;
+-moz-box-shadow: -8px 1px 0px -2px rgba(0,0,0,0.19) inset;">
+                            <h1 class="mt-4 text-prupleAccent font-semibold text-lg">Free</h1>
                             <p class="pt-2 tracking-wide">
-                                <p class="inline align-top">$ </p>
-                                <p class="inline text-4xl font-semibold">0</p>
-                                <p class="inline font-medium">/ mo</p>
+                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                             </p>
                             <div class="mt-16 mx-2  xl:mr-14 py-4">
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
         
                             </div>
                         </div>
                         <!-- Basic Card -->
-                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-12 md:pr-8 shadow-inner">
-                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl lg:text-3xl xl:text-4xl 2xl:5xl">Basic</h1>
+                        <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-12 md:pr-8 " style="box-shadow: -8px 1px 0px -2px rgba(0,0,0,0.19) inset;
+-webkit-box-shadow: -8px 1px 0px -2px rgba(0,0,0,0.19) inset;
+-moz-box-shadow: -8px 1px 0px -2px rgba(0,0,0,0.19) inset;">
+                            <h1 class="mt-4 text-prupleAccent font-semibold text-lg">Basic</h1>
                             <p class="pt-2 tracking-wide">
-                                <p class="inline align-top">$ </p>
-                                <p class="inline text-4xl font-semibold">0</p>
-                                <p class="inline font-medium">/ mo</p>
+                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                             </p>
                             <div class="mt-12 mx-2  xl:mr-14 py-4">
                                 
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
         
                             </div>
                         </div>
                         <!-- Plus Card -->
-                        <div class="lg:p-8 md:p-3 md:mx-3 lg:mx-8 scale-125 bg-white text-center lg:pr-12 md:pr-8 shadow-xl space-y-6 py-8 border border-prupleAccent">
-                            <p class="bg-prupleAccent text-white py-1 px-8 mb-4 text-center">Recomended</p>
-                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl lg:text-3xl xl:text-4xl 2xl:5xl">Plus</h1>
+                        <div class="lg:p-8 md:p-3 md:mx-3 lg:mx-8 scale-125 bg-white text-center lg:px-8 md:px-8 shadow-xl space-y-6 py-8 border border-prupleAccent xl:pb-16">
+                            <p class="w-full lg:w-3/4 bg-prupleAccent text-white py-1 pr-4 pl-4 lg:px-4 text-center mb-4 mx-auto">Recomended</p>
+                            <h1 class="mt-4 text-prupleAccent font-semibold text-lg">Plus</h1>
                             <div>
                                 <p class="pt-2 tracking-wide">
-                                    <p class="inline align-top">$ </p>
-                                    <p class="inline text-4xl font-semibold">0</p>
-                                    <p class="inline font-medium">/ mo</p>
+                                    <p class="inline text-4xl font-bold prices">$0/mo</p>
                                 </p>
                             </div>
-                            <div class="mt-16 mx-2  xl:mr-14 py-4">
+                            <div class="mt-16 mx-2  xl:mr-24 py-4 lg:mr-16">
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                             </div>
                         </div>
                         <!-- Pro Card -->
                         <div class=" lg:p-8 md:p-4 bg-white text-center lg:pr-12 md:pr-8 shadow-xl">
-                            <h1 class="mt-4 text-prupleAccent font-semibold text-xl lg:text-3xl xl:text-4xl 2xl:5xl">Pro</h1>
+                            <h1 class="mt-4 text-prupleAccent font-semibold text-lg">Pro</h1>
                             <p class="pt-2 tracking-wide">
-                                <p class="inline align-top ">$ </p>
-                                <p class="inline text-4xl font-semibold">0</p>
-                                <p class="inline font-medium">/ mo</p>
+                                <p class="inline text-4xl font-semibold prices">$0/mo</p>
                             </p>
                             <div class="mt-8 mx-2  xl:mr-14 py-4">
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
                                 <p class="font-semibold text-left">
-                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">
+                                    <p class="inline material-icons align-middle md:text-base lg:text-lg xl:text-xl">
                                         <i class="fas fa-check text-prupleAccent"></i>
                                     </p>
-                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">Placeholder</p>
+                                    <p class="inline pl-2 text-[#5B5B5B] md:text-base lg:text-lg xl:text-xl">Placeholder</p>
                                 </p>
 
                             </div>
@@ -936,38 +928,42 @@ span {
         <!-- section ends -->
 
         <!-- section starts -->
-        <section class="section section-custom overflow-y-hidden relative">
-            <div class="container mx-auto flex justify-center">
-                <div class="flex flex-col mt-14 max-h-[90%] justify-center">
+        <section class="section section-custom overflow-y-hidden relative items-center justify-between lg:justify-center xl:justify-end">
+            <div class="container mx-auto flex justify-center items-start">
+                <div class="mt-16 xs:mt-24 lg:mt-0 max-h-[90%] justify-start">
                     <div class="w-full">
                         <h1 class="text-3xl md:text-4xl lg:text-5xl xl:text-[54px] font-bold xl:leading-none text-whiteAccent max-w-7xl mb-6 hidden md:block">Why Us</h1>
                         <div class="grid grid-cols-1 gap-x-2 md:gap-x-4 md:gap-y-6 lg:gap-x-8 lg:gap-y-10 gap-y-4 lg:grid-cols-2 px-4">
-                            <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
-                                <img src="./assets/images/landing-page/brackets-hand.png" alt="">
+                            <div class="flex bg-white px-3 py-1 md:px-6 md:py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                                <div>
+                                    <img src="./assets/images/landing-page/brackets-hand.png" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px]" alt="">
+                                </div>
                                 <div>
                                     <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Fast placehold Message</h1>
                                     <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
-                                <img src="./assets/images/landing-page/support.png" alt="">
+                            <div class="flex bg-white px-3 py-1 md:px-6 md:py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                                <div>
+                                    <img src="./assets/images/landing-page/support.png" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px]" alt="">
+                                </div>
                                 <div>
                                     <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Maintained 24/7</h1>
                                     <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                            <div class="flex bg-white px-3 py-1 md:px-6 md:py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
                                 <div>
-                                    <img src="./assets/images/landing-page/features.png" class="" alt="">
+                                    <img src="./assets/images/landing-page/features.png" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px]" alt="">
                                 </div>
                                 <div>
                                     <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Top Features</h1>
                                     <p class="text-[#5856A7] text-xs md:text-sm lg:text-base 2xl:text-xl">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
                                 </div>
                             </div>
-                            <div class="flex bg-white px-6 py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
+                            <div class="flex bg-white px-3 py-1 md:px-6 md:py-3 lg:px-9 lg:py-6 2xl:px-12 2xl:py-9 rounded-md gap-x-4">
                                 <div class="flex items-center justify-center">
-                                    <img src="./assets/images/landing-page/ease.png" class="" alt="">
+                                    <img src="./assets/images/landing-page/ease.png" class="w-[40px] h-[40px] md:w-[60px] md:h-[60px]" alt="">
                                 </div>
                                 <div>
                                     <h1 class="text-[#201E8B] text-sm md:text-base lg:text-lg 2xl:text-xl font-semibold">Easy to use</h1>
@@ -976,60 +972,60 @@ span {
                             </div>
                         </div>
                     </div>
-                    <footer class="relative w-full space-y-4 md:space-y-8 px-4 md:px-8 py-8 md:mt-8 lg:mt-12 xl:mt-24 2xl:mt-36">
-                        <hr class="w-[90%] mx-auto z-50 md:mb-8">
-                        <div class="container mx-auto">
-                            <div class="flex flex-col md:flex-row items-center text-white justify-center sm:gap-8 gap-2 md:space-x-16">
-                                <div class="flex justify-center gap-x-4 sm:gap-y-8 md:gap-16 lg:gap-x-28">
-                                    <div>
-                                        <h1 class="text-base md:text-xl sm:mb-3 font-semibold">Company</h1>
-                                        <div class="md:space-y-2">
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">About Us</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Blog</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Services</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Pricing</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Partnership</a>
-                                        </div>
+                </div>
+            </div>
+            <footer class="relative w-full space-y-4 md:space-y-8 px-4 md:px-8 py-8 md:mt-8 lg:mt-12 xl:mt-24 2xl:mt-36 " style="justify-self: flex-end !important;">
+                <hr class="w-[90%] mx-auto z-50 md:mb-8">
+                <div class="container mx-auto lg:pt-12 xl:pt-28">
+                    <div class="flex flex-col md:flex-row md:items-start md:justify-center text-white">
+                        <div class="flex flex-col md:flex-row justify-center md:justify-start items-center md:items-start md:gap-x-16 lg:gap-x-24 xl:gap-x-48">
+                            <div class="flex justify-evenly gap-x-4 md:gap-x-16 lg:gap-x-24 xl:gap-x-48">
+                                <div>
+                                    <h1 class="text-base md:text-xl font-semibold">Company</h1>
+                                    <div class="xs:space-y-3 md:space-y-4">
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">About Us</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Blog</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Services</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Pricing</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Partnership</a>
                                     </div>
-                                    <div>
-                                        <h1 class="text-base md:text-xl sm:mb-3 font-semibold">Usefull Links</h1>
-                                        <div class="md:space-y-2">
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Privat Policy</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Terms and conditions</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Disclamer</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">Support</a>
-                                            <a class="text-xs sm:text-sm md:text-base block" href="#">FAQ</a>
-                                        </div>
+                                </div>
+                                <div class="flex flex-col items-center md:items-start">
+                                    <h1 class="text-base md:text-xl font-semibold">Usefull Links</h1>
+                                    <div class="xs:space-y-3 md:space-y-4">
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Privat Policy</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Terms and conditions</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Disclamer</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">Support</a>
+                                        <a class="text-center md:text-left text-sm md:text-base block" href="#">FAQ</a>
                                     </div>
-                                    <div>
-                                        <h1 class="text-base md:text-xl sm:mb-3 font-semibold">Contact</h1>
-                                        <div class="md:space-y-2">
+                                </div>
+                            </div>
+                            <div class="">
+                                <h1 class="text-center md:text-left text-base md:text-xl font-semibold">Contact</h1>
+                                <div class="space-y-1 md:space-y-4 flex flex-col items-center md:items-start justify-center ">
 
-                                            <div class="">
-                                                <!-- <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-solid fas fa-phone"></i> -->
-                                                <!-- <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-solid fas far fa-envelope"></i> -->
-                                                <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fa-instagram"></i>
-                                                <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fab fa-whatsapp"></i>
-                                                <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fab fab fa-twitter"></i>
-                                                <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fab fa-youtube"></i>
-                                            </div>
-                                            <div class="text-left md:text-center">
-                                                <i class="fa-solid fa-envelope text-xs sm:text-xl md:text-2xl mr-2"></i><a class="text-xs md:text-base lg:text-lg" href="mailto:mailhere@gmail.com">mail@gmail.com</a>
-                                            </div>
-                                            <div class="text-left md:text-center">
-                                                <i class="fa-solid fas fa-phone text-xs sm:text-xl md:text-2xl mr-2 "></i><a class="text-xs md:text-base lg:text-lg" href="tel:0045 26 71 99 53">0045 26 71 99 53</a>
-                                            </div>
-                                        </div>
+                                    <div class="">
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mr-2 fa-brands fab fa-instagram"></i>
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fab fa-whatsapp"></i>
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fab fab fa-twitter"></i>
+                                        <i class="text-sm sm:text-xl md:text-2xl lg:text-3xl md:mx-2 mx-1 fa-brands fab fab fa-youtube"></i>
+                                    </div>
+                                    <div class="text-left">
+                                        <i class="fa-solid fa-envelope text-xs sm:text-xl md:text-2xl mr-2"></i><a class="text-xs md:text-base lg:text-lg" href="mailto:mailhere@gmail.com">mail@gmail.com</a>
+                                    </div>
+                                    <div class="text-left">
+                                        <i class="fa-solid fas fa-phone text-xs sm:text-xl md:text-2xl mr-2 "></i><a class="text-xs md:text-base lg:text-lg" href="tel:0045 26 71 99 53">0045 26 71 99 53</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </footer>
+                    </div>
                 </div>
-            </div>
-            <div class="relative bottom-5 text-center mx-5 text-xs text-white sm:mt-8 sm:mb-8">
-                Copyright © 2021 all rights reserved smartHome
-            </div>
+                <div class="text-center mx-5 text-xs text-white sm:mt-8 sm:mb-8">
+                    Copyright © 2021 all rights reserved smartHome
+                </div>
+            </footer>
         </section>
         <!-- section ends -->
     </div>    
@@ -1048,12 +1044,20 @@ span {
         var menu = ['Free', 'Basic', 'Plus', 'Pro']
         var mySwiper = new Swiper ('.swiper-container', {
         // If we need pagination
-        spaceBetween: 0,
+        slidesPerView: 1,
+        centerInsufficientSlides: true,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+        spaceBetween: 40,
+        longSwiper: false,
+        // width: 00,
+        slidesOffsetBefore: 0, 
+        slidesOffsetAfter: 0, 
         pagination: {
         el: '.swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-        return '<span class="' + className + '">' + (menu[index]) + '</span>';
+        return '<div class="' + className + '">' + (menu[index]) + '</div>';
             },
         },
         })

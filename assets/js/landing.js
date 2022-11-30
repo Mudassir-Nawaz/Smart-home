@@ -58,6 +58,19 @@ name1.addEventListener('click', ()=> {
     text4.classList.add('hidden')
 })
 
+// For testimonials
+// for (let i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+
+//     var panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
 
 // For FAQ
 for (let i = 0; i < acc.length; i++) {
@@ -73,6 +86,8 @@ for (let i = 0; i < acc.length; i++) {
     });
 }
 
+
+
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -85,6 +100,13 @@ for (let i = 0; i < acc.length; i++) {
     let icon = this.firstElementChild;
     icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
+    if (panel.style.display === "block") {
+      icon.classList.add('fa-minus');
+      icon.classList.remove('fa-plus');
+    } else {
+    icon.classList.add('fa-plus');
+    icon.classList.remove('fa-minus');
+    }
   });
 }
 
@@ -203,3 +225,40 @@ setInterval(() => {
 //     snapScroll.remove();
 //   }
 // })
+
+// Pricing
+
+const monthly = document.querySelector('#monthly');
+const yearly = document.querySelector('#yearly');
+const prices = document.querySelectorAll('.prices')
+monthly.addEventListener('click', ()=> {
+
+  for (let i = 0; i < prices.length; i++) {
+    prices[i].innerHTML = "$0/mo"
+  }
+  monthly.classList.remove('bg-white')
+  monthly.classList.add('bg-transparent')
+  monthly.classList.remove('text-prupleAccent')
+  monthly.classList.add('text-white')
+  
+  yearly.classList.add('bg-white')
+  yearly.classList.remove('bg-transparent')
+  yearly.classList.add('text-prupleAccent')
+  yearly.classList.remove('text-white')
+})
+
+yearly.addEventListener('click', ()=> {
+
+  for (let i = 0; i < prices.length; i++) {
+    prices[i].innerHTML = "$0/year"
+  }
+  yearly.classList.add('bg-transparent')
+  yearly.classList.remove('bg-white')
+  yearly.classList.remove('text-prupleAccent')
+  yearly.classList.add('text-white')
+
+  monthly.classList.add('bg-white')
+  monthly.classList.remove('bg-transparent')
+  monthly.classList.add('text-prupleAccent')
+  monthly.classList.remove('text-white')
+})
