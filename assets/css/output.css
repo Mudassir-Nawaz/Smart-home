@@ -705,6 +705,11 @@ body {
   margin-right: 0.25rem;
 }
 
+.my-6 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -811,6 +816,50 @@ body {
 
 .ml-4 {
   margin-left: 1rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-9 {
+  margin-top: 2.25rem;
+}
+
+.mt-7 {
+  margin-top: 1.75rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mt-\[14px\] {
+  margin-top: 14px;
+}
+
+.mt-\[13px\] {
+  margin-top: 13px;
+}
+
+.mt-\[13\] {
+  margin-top: 13;
+}
+
+.mt-\[14\] {
+  margin-top: 14;
+}
+
+.mt-\[12px\] {
+  margin-top: 12px;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
 }
 
 .block {
@@ -951,6 +1000,10 @@ body {
 
 .w-\[40px\] {
   width: 40px;
+}
+
+.w-64 {
+  width: 16rem;
 }
 
 .min-w-\[600px\] {
@@ -1374,6 +1427,16 @@ body {
   padding-bottom: 2px;
 }
 
+.py-\[18px\] {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.py-\[5px\] {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .pt-14 {
   padding-top: 3.5rem;
 }
@@ -1670,6 +1733,11 @@ body {
   background-color: rgb(238 238 238 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-prupleAccent:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(75 67 157 / var(--tw-bg-opacity));
+}
+
 .focus\:border-gray-500:focus {
   --tw-border-opacity: 1;
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
@@ -1849,6 +1917,10 @@ body {
 
   .md\:w-\[60px\] {
     width: 60px;
+  }
+
+  .md\:w-\[200px\] {
+    width: 200px;
   }
 
   .md\:max-w-full {

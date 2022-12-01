@@ -31,28 +31,62 @@ const faqA = document.querySelector('#faq-answer')
 
 name2.addEventListener('click', ()=> {
     text2.classList.remove('hidden')
-
+    name2.classList.add('bg-prupleAccent')
+    name2.classList.add('text-white')
+    
+    
+    name3.classList.remove('bg-prupleAccent')
+    name3.classList.remove('text-white')
+    name4.classList.remove('bg-prupleAccent')
+    name4.classList.remove('text-white')
+    name1.classList.remove('bg-prupleAccent')
+    name1.classList.remove('text-white')
     text1.classList.add('hidden')
     text3.classList.add('hidden')
     text4.classList.add('hidden')
 })
 name3.addEventListener('click', ()=> {
     text3.classList.remove('hidden')
+    name3.classList.add('bg-prupleAccent')
+    name3.classList.add('text-white')
 
+    name2.classList.remove('bg-prupleAccent')
+    name2.classList.remove('text-white')
+    name4.classList.remove('bg-prupleAccent')
+    name4.classList.remove('text-white')
+    name1.classList.remove('bg-prupleAccent')
+    name1.classList.remove('text-white')
     text2.classList.add('hidden')
     text1.classList.add('hidden')
     text4.classList.add('hidden')
 })
 name4.addEventListener('click', ()=> {
     text4.classList.remove('hidden')
+    name4.classList.add('bg-prupleAccent')
+    name4.classList.add('text-white')
 
+    name2.classList.remove('bg-prupleAccent')
+    name2.classList.remove('text-white')
+    name3.classList.remove('bg-prupleAccent')
+    name3.classList.remove('text-white')
+    name1.classList.remove('bg-prupleAccent')
+    name1.classList.remove('text-white')
     text2.classList.add('hidden')
     text3.classList.add('hidden')
     text1.classList.add('hidden')
 })
 name1.addEventListener('click', ()=> {
     text1.classList.remove('hidden')
+    name1.classList.add('bg-prupleAccent')
+    name1.classList.add('text-white')
 
+    name2.classList.remove('bg-prupleAccent')
+    name2.classList.remove('text-white')
+    name3.classList.remove('bg-prupleAccent')
+    name3.classList.remove('text-white')
+    name4.classList.remove('bg-prupleAccent')
+    name4.classList.remove('text-white')
+    text2.classList.add('hidden')
     text2.classList.add('hidden')
     text3.classList.add('hidden')
     text4.classList.add('hidden')
@@ -73,11 +107,14 @@ name1.addEventListener('click', ()=> {
 // }
 
 // For FAQ
+var arrayOfFaq = Array.from(acc)
+// console.log(everyOther)
+
 for (let i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-  
-      var panel = this.nextElementSibling;
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+
+    var panel = this.nextElementSibling;
       if (panel.style.display === "block") {
         panel.style.display = "none";
       } else {
@@ -87,16 +124,37 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 
+arrayOfFaq.forEach(element => {
+  
+  Array.prototype.except = function(element) {
+    return this.filter(function(x) { return x !== element; });        
+  }; 
+  element.addEventListener('click', ()=> {
+    var everyOther = arrayOfFaq.except(element)
+    everyOther.forEach(panel => {
+      panel.nextElementSibling.style.display = "none";
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+      let icon = panel.firstElementChild;
+      if(icon.classList.contains("fa-minus")){
+        icon.classList.toggle('fa-minus')
+        icon.classList.toggle('fa-plus')
+      }
+      // console.log(panel.nextElementSibling)
+    })
+  })
+});
+
+
 
 for (let i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
-    if (panel.style.maxHeight) {
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
+    
     let icon = this.firstElementChild;
     icon.classList.toggle('fa-plus');
     icon.classList.toggle('fa-minus');
@@ -120,22 +178,88 @@ setInterval(() => {
   // console.log(documentBody.className.toString().includes("fp-viewing-second"))
   if(documentBody.className.toString().includes('fp-viewing-firstPage')){
     holder.innerHTML = "Landing"
+    linksChild[0].style.fontWeight = "900"
+
+    linksChild[1].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
+
+    // console.log(linksChild[1])
   }else if(documentBody.className.toString().includes('fp-viewing-second')){
     holder.innerHTML = "Features"
+    linksChild[1].style.fontWeight = "900"
+    
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-third')){
     holder.innerHTML = "Features"
+    linksChild[1].style.fontWeight = "900"
+
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-fourth')){
     holder.innerHTML = "Features"
+    linksChild[1].style.fontWeight = "900"
+
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-fifth')){
     holder.innerHTML = "Features"
+    linksChild[1].style.fontWeight = "900"
+
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-sixth')){
     holder.innerHTML = "Testimonials"
+    linksChild[2].style.fontWeight = "900"
+
+    linksChild[1].style.fontWeight = "normal"
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-seventh')){
     holder.innerHTML = "FAQ"
+    linksChild[4].style.fontWeight = "900"
+
+    linksChild[1].style.fontWeight = "normal"
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-eight')){
     holder.innerHTML = "Pricing"
+    linksChild[3].style.fontWeight = "900"
+
+    linksChild[1].style.fontWeight = "normal"
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-nine')){
     holder.innerHTML = "Services"
+    linksChild[5].style.fontWeight = "900"
+
+    linksChild[1].style.fontWeight = "normal"
+    linksChild[0].style.fontWeight = "normal"
+    linksChild[4].style.fontWeight = "normal"
+    linksChild[2].style.fontWeight = "normal"
+    linksChild[3].style.fontWeight = "normal"
+
   }  
 }, 100);
 
@@ -218,13 +342,6 @@ setInterval(() => {
 }, 1000);
 
 
-// window.addEventListener('DOMContentLoaded', function() {
-//   if(screen.availHeight > screen.availWidth){
-//     const snapScroll = document.querySelector('#fullPage');
-//     console.log('hi')
-//     snapScroll.remove();
-//   }
-// })
 
 // Pricing
 
