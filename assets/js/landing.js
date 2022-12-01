@@ -124,6 +124,21 @@ for (let i = 0; i < acc.length; i++) {
 }
 
 
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    // console.log(this.nextElementSibling)
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight = '0') {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }else{
+      panel.style.maxHeight = null;
+    } 
+    
+  });
+}
+
+
 arrayOfFaq.forEach(element => {
   
   Array.prototype.except = function(element) {
@@ -251,7 +266,7 @@ setInterval(() => {
     linksChild[2].style.fontWeight = "normal"
     linksChild[5].style.fontWeight = "normal"
   }else if(documentBody.className.toString().includes('fp-viewing-nine')){
-    holder.innerHTML = "Services"
+    holder.innerHTML = "Why choose us"
     linksChild[5].style.fontWeight = "900"
 
     linksChild[1].style.fontWeight = "normal"
